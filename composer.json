@@ -1,0 +1,26 @@
+{
+    "name": "typo3/cms-scanner",
+    "description": "TYPO3 CMS static file analysis",
+    "type": "library",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Christian Kuhn",
+            "email": "christian.kuhn@typo3.org"
+        },
+        {
+            "name": "Oliver Hader",
+            "email": "oliver.hader@typo3.org"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "TYPO3\\CMS\\Scanner\\": "src/",
+        "TYPO3\\CMS\\Scanner\\Tests\\": "tests/"
+      }
+    },
+    "require": {
+        "nikic/php-parser": "^3.1",
+        "symfony/finder": "^3.3"
+    }
+}
