@@ -73,7 +73,7 @@ class InterfaceMethodChangedMatcher extends AbstractCoreMatcher
                     'restFiles' => $this->matcherDefinitions[$methodName]['restFiles'],
                     'line' => $node->getAttribute('startLine'),
                     'message' => 'Implementation of dropped interface argument for method "' . $methodName . '()"',
-                    'indicator' => 'weak',
+                    'indicator' => static::INDICATOR_WEAK,
                 ];
             }
         }
@@ -94,7 +94,7 @@ class InterfaceMethodChangedMatcher extends AbstractCoreMatcher
                     'restFiles' => $this->matcherDefinitions[$methodName]['restFiles'],
                     'line' => $node->getAttribute('startLine'),
                     'message' => 'Call to interface method "' . $methodName . '()"',
-                    'indicator' => 'weak',
+                    'indicator' => static::INDICATOR_WEAK,
                 ];
             }
         }

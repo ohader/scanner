@@ -51,7 +51,7 @@ class ClassNameMatcher extends AbstractCoreMatcher
                     'restFiles' => $this->matcherDefinitions[$fullyQualifiedClassName]['restFiles'],
                     'line' => $node->getAttribute('startLine'),
                     'message' => 'Usage of class "' . $fullyQualifiedClassName . '"',
-                    'indicator' => 'strong',
+                    'indicator' => static::INDICATOR_STRONG,
                 ];
             }
         }

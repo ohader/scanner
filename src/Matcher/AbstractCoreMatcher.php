@@ -28,6 +28,9 @@ use TYPO3\CMS\Scanner\CodeScannerInterface;
  */
 abstract class AbstractCoreMatcher extends NodeVisitorAbstract implements CodeScannerInterface
 {
+    const INDICATOR_STRONG = 'strong';
+    const INDICATOR_WEAK = 'weak';
+
     /**
      * Incoming main configuration array.
      *

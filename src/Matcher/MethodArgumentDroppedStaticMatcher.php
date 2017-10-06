@@ -67,7 +67,7 @@ class MethodArgumentDroppedStaticMatcher extends AbstractCoreMatcher implements 
                         'message' => 'Method "' . $node->name . '()" supports only '
                             . $this->matcherDefinitions[$fqdnClassWithMethod]['maximumNumberOfArguments']
                             . ' arguments.',
-                        'indicator' => 'strong',
+                        'indicator' => static::INDICATOR_STRONG,
                     ];
                 }
             } elseif ($node->class instanceof Variable
@@ -76,7 +76,7 @@ class MethodArgumentDroppedStaticMatcher extends AbstractCoreMatcher implements 
                 $match = [
                     'restFiles' => [],
                     'line' => $node->getAttribute('startLine'),
-                    'indicator' => 'weak',
+                    'indicator' => static::INDICATOR_WEAK,
                 ];
 
                 $numberOfArguments = count($node->args);

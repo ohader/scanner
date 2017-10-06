@@ -53,7 +53,7 @@ class ConstantMatcher extends AbstractCoreMatcher
                 'restFiles' => $this->matcherDefinitions[$node->name->toString()]['restFiles'],
                 'line' => $node->getAttribute('startLine'),
                 'message' => 'Call to global constant "' . $node->name->toString() . '"',
-                'indicator' => 'strong',
+                'indicator' => static::INDICATOR_STRONG,
             ];
         }
     }

@@ -55,7 +55,7 @@ class MethodCallMatcher extends AbstractCoreMatcher
                 'restFiles' => [],
                 'line' => $node->getAttribute('startLine'),
                 'message' => 'Call to method "' . $node->name . '()"',
-                'indicator' => 'weak',
+                'indicator' => static::INDICATOR_WEAK,
             ];
 
             $numberOfArguments = count($node->args);

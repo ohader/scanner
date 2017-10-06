@@ -53,7 +53,7 @@ class ArrayDimensionMatcher extends AbstractCoreMatcher
                 'restFiles' => [],
                 'line' => $node->getAttribute('startLine'),
                 'message' => 'Access to array key "' . $node->dim->value . '"',
-                'indicator' => 'weak',
+                'indicator' => static::INDICATOR_WEAK,
             ];
 
             foreach ($this->flatMatcherDefinitions[$node->dim->value]['candidates'] as $candidate) {

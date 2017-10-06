@@ -56,7 +56,7 @@ class MethodArgumentDroppedMatcher extends AbstractCoreMatcher implements CodeSc
             $match = [
                 'restFiles' => [],
                 'line' => $node->getAttribute('startLine'),
-                'indicator' => 'weak',
+                'indicator' => static::INDICATOR_WEAK,
             ];
 
             $isArgumentUnpackingUsed = $this->isArgumentUnpackingUsed($node->args);

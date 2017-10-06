@@ -67,7 +67,7 @@ class MethodCallStaticMatcher extends AbstractCoreMatcher
                         'restFiles' => $this->matcherDefinitions[$fqdnClassWithMethod]['restFiles'],
                         'line' => $node->getAttribute('startLine'),
                         'message' => 'Use of static class method call "' . $fqdnClassWithMethod . '()"',
-                        'indicator' => 'strong',
+                        'indicator' => static::INDICATOR_STRONG,
                     ];
                 }
             } elseif ($node->class instanceof Variable
@@ -77,7 +77,7 @@ class MethodCallStaticMatcher extends AbstractCoreMatcher
                     'restFiles' => [],
                     'line' => $node->getAttribute('startLine'),
                     'message' => 'Use of static class method call "' . $node->name . '()"',
-                    'indicator' => 'weak',
+                    'indicator' => static::INDICATOR_WEAK,
                 ];
 
                 $numberOfArguments = count($node->args);

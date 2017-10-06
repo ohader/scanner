@@ -53,7 +53,7 @@ class PropertyProtectedMatcher extends AbstractCoreMatcher
                 'restFiles' => [],
                 'line' => $node->getAttribute('startLine'),
                 'message' => 'Fetch of property "' . $node->name . '"',
-                'indicator' => 'weak',
+                'indicator' => static::INDICATOR_WEAK,
             ];
 
             foreach ($this->flatMatcherDefinitions[$node->name]['candidates'] as $candidate) {
