@@ -40,7 +40,10 @@ class Scanner
         }
 
         $directoryMatches = new DirectoryMatches($path);
-        $files = $this->finder->files()->in($path)->name('*.php');
+        $files = $this->finder->files()
+            ->in(Utility::removeTrailingDirectorySeparator($path))
+            ->name('*.php');
+
         /** @var SplFileInfo $file */
         foreach ($files as $file) {
             $fileMatches = $this->scanFile(

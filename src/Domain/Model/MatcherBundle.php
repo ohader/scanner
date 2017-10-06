@@ -1,6 +1,8 @@
 <?php
 namespace TYPO3\CMS\Scanner\Domain\Model;
 
+use TYPO3\CMS\Scanner\Utility;
+
 class MatcherBundle
 {
     /**
@@ -42,10 +44,10 @@ class MatcherBundle
             );
         }
 
-        $this->configurationPath = $this->ensureTrailingDirectorySeparator(
+        $this->configurationPath = Utility::ensureTrailingDirectorySeparator(
             $configurationPath
         );
-        $this->documentationPath = $this->ensureTrailingDirectorySeparator(
+        $this->documentationPath = Utility::ensureTrailingDirectorySeparator(
             $documentationPath
         );
 
@@ -74,11 +76,6 @@ class MatcherBundle
             },
             $this->classNames
         );
-    }
-
-    private function ensureTrailingDirectorySeparator(string $path): string
-    {
-        return rtrim($path, DIRECTORY_SEPARATOR) . DIRECTORY_SEPARATOR;
     }
 
     private function extractLastClassPart(string $className): string
