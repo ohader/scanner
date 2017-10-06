@@ -70,6 +70,7 @@ class MethodArgumentRequiredMatcher extends AbstractCoreMatcher implements CodeS
                     && $numberOfArguments <= $candidate['maximumNumberOfArguments']
                 ) {
                     $isPossibleMatch = true;
+                    $match['subject'] = $node->name;
                     $match['message'] = 'Method ' . $node->name . '() needs at least ' . $candidate['numberOfMandatoryArguments'] . ' arguments.';
                     $match['restFiles'] = array_unique(array_merge($match['restFiles'], $candidate['restFiles']));
                 }

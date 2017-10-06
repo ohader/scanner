@@ -54,6 +54,7 @@ class ClassConstantMatcher extends AbstractCoreMatcher
             $this->matches[] = [
                 'restFiles' => $this->matcherDefinitions[$node->class->toString() . '::' . $node->name]['restFiles'],
                 'line' => $node->getAttribute('startLine'),
+                'subject' => $node->class->toString() . '::' . $node->name,
                 'message' => 'Call to class constant "' . $node->class->toString() . '::' . $node->name . '"',
                 'indicator' => static::INDICATOR_STRONG,
             ];

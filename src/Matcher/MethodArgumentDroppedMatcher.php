@@ -70,6 +70,7 @@ class MethodArgumentDroppedMatcher extends AbstractCoreMatcher implements CodeSc
                     && $numberOfArguments > $candidate['maximumNumberOfArguments']
                 ) {
                     $isPossibleMatch = true;
+                    $match['subject'] = $node->name;
                     $match['message'] = 'Method "' . $node->name . '()" supports only ' . $candidate['maximumNumberOfArguments'] . ' arguments.';
                     $match['restFiles'] = array_unique(array_merge($match['restFiles'], $candidate['restFiles']));
                 }

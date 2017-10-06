@@ -75,6 +75,7 @@ class MethodArgumentUnusedMatcher extends AbstractCoreMatcher implements CodeSca
                             || $node->args[$droppedArgumentNumber - 1]->value->name->parts[0] !== null)
                     ) {
                         $isPossibleMatch = true;
+                        $match['subject'] = $node->name;
                         $match['message'] = 'Call to method "' . $node->name . '()" with'
                             . ' argument ' . $droppedArgumentNumber . ' not given as null.';
                         $match['restFiles'] = array_unique(array_merge($match['restFiles'], $candidate['restFiles']));

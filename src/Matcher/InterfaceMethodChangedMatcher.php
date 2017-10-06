@@ -72,6 +72,7 @@ class InterfaceMethodChangedMatcher extends AbstractCoreMatcher
                 $this->matches[] = [
                     'restFiles' => $this->matcherDefinitions[$methodName]['restFiles'],
                     'line' => $node->getAttribute('startLine'),
+                    'subject' => $methodName,
                     'message' => 'Implementation of dropped interface argument for method "' . $methodName . '()"',
                     'indicator' => static::INDICATOR_WEAK,
                 ];
@@ -93,6 +94,7 @@ class InterfaceMethodChangedMatcher extends AbstractCoreMatcher
                 $this->matches[] = [
                     'restFiles' => $this->matcherDefinitions[$methodName]['restFiles'],
                     'line' => $node->getAttribute('startLine'),
+                    'subject' => $methodName,
                     'message' => 'Call to interface method "' . $methodName . '()"',
                     'indicator' => static::INDICATOR_WEAK,
                 ];

@@ -98,6 +98,7 @@ class Scanner
             function (array $result) {
                 $match = new Match(
                     $result['indicator'],
+                    $result['subject'],
                     $result['message'],
                     $result['line']
                 );

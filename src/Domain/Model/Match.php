@@ -5,6 +5,7 @@ class Match
 {
     private $identifier;
     private $indicator;
+    private $subject;
     private $message;
     private $line;
 
@@ -12,6 +13,7 @@ class Match
 
     public function __construct(
         string $indicator,
+        string $subject,
         string $message,
         int $line
     )
@@ -26,6 +28,7 @@ class Match
         );
 
         $this->indicator = $indicator;
+        $this->subject = $subject;
         $this->message = $message;
         $this->line = $line;
     }
@@ -44,6 +47,14 @@ class Match
     public function getIndicator(): string
     {
         return $this->indicator;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSubject(): string
+    {
+        return $this->subject;
     }
 
     /**

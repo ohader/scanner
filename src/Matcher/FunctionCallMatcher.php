@@ -64,6 +64,7 @@ class FunctionCallMatcher extends AbstractCoreMatcher
                 $this->matches[] = [
                     'restFiles' => $matchDefinition['restFiles'],
                     'line' => $node->getAttribute('startLine'),
+                    'subject' => $functionName,
                     'message' => 'Call to function "' . $functionName . '"',
                     'indicator' => static::INDICATOR_STRONG,
                 ];

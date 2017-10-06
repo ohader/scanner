@@ -50,6 +50,7 @@ class ClassNameMatcher extends AbstractCoreMatcher
                 $this->matches[] = [
                     'restFiles' => $this->matcherDefinitions[$fullyQualifiedClassName]['restFiles'],
                     'line' => $node->getAttribute('startLine'),
+                    'subject' => $fullyQualifiedClassName,
                     'message' => 'Usage of class "' . $fullyQualifiedClassName . '"',
                     'indicator' => static::INDICATOR_STRONG,
                 ];
