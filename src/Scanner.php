@@ -89,7 +89,15 @@ class Scanner
     {
         $matcherMatches = array_map(
             function (CodeScannerInterface $matcher) {
-                return $matcher->getMatches();
+                return array_map(
+                    function (array $result) use ($matcher) {
+                        return array_merge(
+                            ['matcher' => get_class($matcher)],
+                            $result
+                        );
+                    },
+                    $matcher->getMatches()
+                );
             },
             $matchers
         );
@@ -97,6 +105,7 @@ class Scanner
         return array_map(
             function (array $result) {
                 $match = new Match(
+                    $result['matcher'],
                     $result['indicator'],
                     $result['subject'],
                     $result['message'],

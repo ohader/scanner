@@ -3,6 +3,7 @@ namespace TYPO3\CMS\Scanner\Domain\Model;
 
 class Match
 {
+    private $matcher;
     private $identifier;
     private $indicator;
     private $subject;
@@ -12,6 +13,7 @@ class Match
     private $restFiles = [];
 
     public function __construct(
+        string $matcher,
         string $indicator,
         string $subject,
         string $message,
@@ -27,6 +29,7 @@ class Match
             )
         );
 
+        $this->matcher = $matcher;
         $this->indicator = $indicator;
         $this->subject = $subject;
         $this->message = $message;
@@ -39,6 +42,14 @@ class Match
     public function getIdentifier()
     {
         return $this->identifier;
+    }
+
+    /**
+     * @return string
+     */
+    public function getMatcher(): string
+    {
+        return $this->matcher;
     }
 
     /**
