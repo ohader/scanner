@@ -1,6 +1,7 @@
 <?php
 namespace TYPO3\CMS\Scanner;
 
+use PhpParser\Error;
 use PhpParser\Parser;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
@@ -8,6 +9,7 @@ use TYPO3\CMS\Scanner\Domain\Model\DirectoryMatches;
 use TYPO3\CMS\Scanner\Domain\Model\FileMatches;
 use TYPO3\CMS\Scanner\Domain\Model\Match;
 use TYPO3\CMS\Scanner\Domain\Model\MatcherBundleCollection;
+use TYPO3\CMS\Scanner\Matcher\AbstractCoreMatcher;
 use TYPO3\CMS\Scanner\Visitor\TraverserFactory;
 
 class Scanner
@@ -70,9 +72,21 @@ class Scanner
             );
         }
 
-        $statements = $this->parser->parse(
-            file_get_contents($file)
-        );
+        try {
+            $statements = $this->parser->parse(
+                file_get_contents($file)
+            );
+        } catch (Error $error) {
+            return $this->buildParseExceptionFileMatches($file, $error);
+        }
+
+        try {
+            $statements = $this->parser->parse(
+                file_get_contents($file)
+            );
+        } catch (Error $error) {
+            return $this->buildParseExceptionFileMatches($file, $error);
+        }
 
         $matchers = $this->traverserFactory->createMatchers($collection);
         $traverser = $this->traverserFactory->createTraverser(...$matchers);
@@ -118,5 +132,20 @@ class Scanner
             },
             array_merge(...$matcherMatches)
         );
+    }
+
+    private function buildParseExceptionFileMatches(
+        string $file,
+        Error $error
+    ): FileMatches
+    {
+        $match = new Match(
+            get_class($error),
+            AbstractCoreMatcher::INDICATOR_IMPOSSIBLE,
+            $file,
+            $error->getMessage(),
+            $error->getStartLine()
+        );
+        return new FileMatches($file, $match);
     }
 }
