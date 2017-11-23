@@ -384,6 +384,69 @@ return [
             'Breaking-82406-RoutingBackendModulesRunThroughRegularDispatcher.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Module\AbstractModule' => [
+        'restFiles' => [
+            'Breaking-82689-BackendAbstractWizardControllerNotExtendsAbstractModule.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\TypoScript\ConfigurationForm' => [
+        'restFiles' => [
+            'Deprecation-82725-DeprecateConfigurationForm.rst',
+        ],
+    ],
+    'TYPO3\CMS\Lowlevel\View\ConfigurationView' => [
+        'restFiles' => [
+            'Deprecation-82744-RenameExtlowlevelViewToLowlevelController.rst',
+        ],
+    ],
+    'TYPO3\CMS\Lowlevel\View\DatabaseIntegrityView' => [
+        'restFiles' => [
+            'Deprecation-82744-RenameExtlowlevelViewToLowlevelController.rst',
+        ],
+    ],
+    'TYPO3\CMS\Extbase\Object\Container\ClassInfo' => [
+        'restFiles' => [
+            'Breaking-57594-OptimizeReflectionServiceCacheHandling.rst',
+            'Feature-57594-OptimizeReflectionServiceCacheHandling.rst'
+        ],
+    ],
+    'TYPO3\CMS\Extbase\Object\Container\ClassInfoCache' => [
+        'restFiles' => [
+            'Breaking-57594-OptimizeReflectionServiceCacheHandling.rst',
+            'Feature-57594-OptimizeReflectionServiceCacheHandling.rst'
+        ],
+    ],
+    'TYPO3\CMS\Extbase\Object\Container\ClassInfoFactory' => [
+        'restFiles' => [
+            'Breaking-57594-OptimizeReflectionServiceCacheHandling.rst',
+            'Feature-57594-OptimizeReflectionServiceCacheHandling.rst'
+        ],
+    ],
+    'TYPO3\CMS\Extbase\Reflection\ClassReflection' => [
+        'restFiles' => [
+            'Breaking-57594-OptimizeReflectionServiceCacheHandling.rst',
+        ],
+    ],
+    'TYPO3\CMS\Extbase\Reflection\MethodReflection' => [
+        'restFiles' => [
+            'Breaking-57594-OptimizeReflectionServiceCacheHandling.rst',
+        ],
+    ],
+    'TYPO3\CMS\Extbase\Reflection\ParameterReflection' => [
+        'restFiles' => [
+            'Breaking-57594-OptimizeReflectionServiceCacheHandling.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\AjaxLoginHandler' => [
+        'restFiles' => [
+            'Deprecation-82805-RenamedAjaxLoginHandlerPHPClass.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\ClientUtility' => [
+        'restFiles' => [
+            'Deprecation-82903-DeprecateClientUtility.rst',
+        ],
+    ],
 
     // Removed interfaces
     'TYPO3\CMS\Backend\Form\DatabaseFileIconsHookInterface' => [
