@@ -1254,4 +1254,152 @@ return [
             'Breaking-82572-RDCTFunctionalityRemoved.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Core\Bootstrap->ensureClassLoadingInformationExists' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-80700-DeprecatedFunctionalityRemoved.rst',
+        ],
+    ],
+    'TYPO3\CMS\Version\DataHandler\CommandMap->setWorkspacesConsiderReferences' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-82701-AlwaysConsiderPublishingReferencesInWorkspaces.rst',
+        ],
+    ],
+    'TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController->readLLfile' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-81217-TSFE-relatedLanguageMethods.rst',
+        ],
+    ],
+    'TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController->getLLL' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Deprecation-81217-TSFE-relatedLanguageMethods.rst',
+        ],
+    ],
+    'TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController->initLLvars' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Deprecation-81217-TSFE-relatedLanguageMethods.rst',
+        ]
+    ],
+    'TYPO3\CMS\Core\Page\PageRenderer->addMetaTag' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-81464-AddAPIForMetaTagManagement.rst',
+
+        ],
+    ],
+    'TYPO3\CMS\Extbase\Reflection\PropertyReflection->isTaggedWith' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-57594-OptimizeReflectionServiceCacheHandling.rst',
+        ],
+    ],
+    'TYPO3\CMS\Extbase\Reflection\PropertyReflection->getTagsValues' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-57594-OptimizeReflectionServiceCacheHandling.rst',
+        ],
+    ],
+    'TYPO3\CMS\Extbase\Reflection\PropertyReflection->getTagValues' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-57594-OptimizeReflectionServiceCacheHandling.rst',
+        ],
+    ],
+    'TYPO3\CMS\Extbase\Reflection\ClassSchema->addProperty' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 4,
+        'restFiles' => [
+            'Deprecation-57594-OptimizeReflectionServiceCacheHandling.rst',
+        ],
+    ],
+    'TYPO3\CMS\Extbase\Reflection\ClassSchema->setModelType' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-57594-OptimizeReflectionServiceCacheHandling.rst',
+        ],
+    ],
+    'TYPO3\CMS\Extbase\Reflection\ClassSchema->getModelType' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Deprecation-57594-OptimizeReflectionServiceCacheHandling.rst',
+        ],
+    ],
+    'TYPO3\CMS\Extbase\Reflection\ClassSchema->setUuidPropertyName' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-57594-OptimizeReflectionServiceCacheHandling.rst',
+        ],
+    ],
+    'TYPO3\CMS\Extbase\Reflection\ClassSchema->getUuidPropertyName' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Deprecation-57594-OptimizeReflectionServiceCacheHandling.rst',
+        ],
+    ],
+    'TYPO3\CMS\Extbase\Reflection\ClassSchema->markAsIdentityProperty' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-57594-OptimizeReflectionServiceCacheHandling.rst',
+        ],
+    ],
+    'TYPO3\CMS\Extbase\Reflection\ClassSchema->getIdentityProperties' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Deprecation-57594-OptimizeReflectionServiceCacheHandling.rst',
+        ],
+    ],
+    'TYPO3\CMS\Scheduler\Scheduler->scheduleNextSchedulerRunUsingAtDaemon' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-82832-UseAtDaemonDroppedFromScheduler.rst',
+        ],
+    ],
+    'TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController->getDomainNameForPid' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Deprecation-82926-DomainRelatedApiMethodInTSFE.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Configuration\TranslationConfigurationProvider->getTranslationTable' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-82445-PageTranslationRelatedFunctionality.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Configuration\TranslationConfigurationProvider->isTranslationInOwnTable' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-82445-PageTranslationRelatedFunctionality.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Configuration\TranslationConfigurationProvider->foreignTranslationTable' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-82445-PageTranslationRelatedFunctionality.rst',
+        ],
+    ],
 ];
