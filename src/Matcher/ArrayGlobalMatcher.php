@@ -60,7 +60,7 @@ class ArrayGlobalMatcher extends AbstractCoreMatcher
                 'restFiles' => $this->matcherDefinitions['$GLOBALS[\'' . $node->dim->value . '\']']['restFiles'],
                 'line' => $node->getAttribute('startLine'),
                 'subject' => $node->dim->value,
-                'message' => 'Access to array global array "' . $node->dim->value . '"',
+                'message' => 'Access to global array "' . $node->dim->value . '"',
                 'indicator' => static::INDICATOR_STRONG,
             ];
         }
