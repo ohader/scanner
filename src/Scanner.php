@@ -18,6 +18,16 @@ class Scanner
     private $parser;
     private $traverserFactory;
 
+    /**
+     * @var array
+     */
+    private $typeRanking = [
+        Match::TYPE_BREAKING => 100,
+        Match::TYPE_DEPRECATION => 80,
+        Match::TYPE_IMPORTANT => 50,
+        Match::TYPE_FEATURE => 20
+    ];
+
     public function __construct(
         Finder $finder,
         Parser $parser,
@@ -118,12 +128,16 @@ class Scanner
 
         return array_map(
             function (array $result) {
+                if (!empty($result['restFiles'])) {
+                    $type = $this->inferTypeFromRestFiles($result['restFiles']);
+                }
                 $match = new Match(
                     $result['matcher'],
                     $result['indicator'],
                     $result['subject'],
                     $result['message'],
-                    $result['line']
+                    $result['line'],
+                    $type ?? Match::TYPE_IMPORTANT
                 );
                 if (!empty($result['restFiles'])) {
                     $match->setRestFiles($result['restFiles']);
@@ -144,8 +158,36 @@ class Scanner
             AbstractCoreMatcher::INDICATOR_IMPOSSIBLE,
             $file,
             $error->getMessage(),
-            $error->getStartLine()
+            $error->getStartLine(),
+            Match::TYPE_BREAKING
         );
         return new FileMatches($file, $match);
+    }
+
+    private function inferTypeFromRestFiles(array $restFiles): string
+    {
+        $type = '';
+        foreach ($restFiles as $restFile) {
+            $fileType = $this->extractFileType($restFile);
+            $type = $this->getHigherType($type, $fileType);
+            if ($type === Match::TYPE_BREAKING) {
+                // breaking is the highest type, return if this type is found.
+                break;
+            }
+        }
+        return $type;
+    }
+
+    private function extractFileType(string $restFile): string
+    {
+        $normalizedFile = str_replace('\\', '/', $restFile);
+        $paths = explode('/', $normalizedFile);
+        $fileType = explode('-', array_pop($paths))[0];
+        return strtoupper($fileType);
+    }
+
+    private function getHigherType(string $type, string $fileType): string
+    {
+        return ($this->typeRanking[$fileType] > $this->typeRanking[$type]) ? $fileType : $type;
     }
 }

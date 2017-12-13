@@ -106,7 +106,7 @@ return [
     ],
     '$GLOBALS[\'TYPO3_CONF_VARS\'][\'EXT\'][\'extConf\']' => [
         'restFiles' => [
-            'Deprecation-82254-DeprecateGLOBALSTYPO3_CONF_VARSEXTextConf.rst',
+            'Deprecation-82254-DeprecateGLOBALSTYPO3_CONF_VARSEXTextConf.rst.twig',
         ],
     ],
     '$GLOBALS[\'TYPO3_CONF_VARS\'][\'EXT\'][\'allowSystemInstall\']' => [

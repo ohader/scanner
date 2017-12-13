@@ -3,12 +3,18 @@ namespace TYPO3\CMS\Scanner\Domain\Model;
 
 class Match
 {
+    const TYPE_BREAKING = 'BREAKING';
+    const TYPE_DEPRECATION = 'DEPRECATION';
+    const TYPE_IMPORTANT = 'IMPORTANT';
+    const TYPE_FEATURE = 'FEATURE';
+
     private $matcher;
     private $identifier;
     private $indicator;
     private $subject;
     private $message;
     private $line;
+    private $type;
 
     private $restFiles = [];
 
@@ -17,7 +23,8 @@ class Match
         string $indicator,
         string $subject,
         string $message,
-        int $line
+        int $line,
+        string $type
     )
     {
         $this->identifier = str_replace(
@@ -34,6 +41,15 @@ class Match
         $this->subject = $subject;
         $this->message = $message;
         $this->line = $line;
+        $this->type = $this->validateType($type);
+    }
+
+    /**
+     * @return string
+     */
+    public function getType(): string
+    {
+        return $this->type;
     }
 
     /**
@@ -98,5 +114,19 @@ class Match
     public function setRestFiles(array $restFiles)
     {
         $this->restFiles = $restFiles;
+    }
+
+    private function validateType(string $type): string
+    {
+        $validTypes = [
+            self::TYPE_BREAKING,
+            self::TYPE_DEPRECATION,
+            self::TYPE_FEATURE,
+            self::TYPE_IMPORTANT
+        ];
+        if (!in_array($type, $validTypes, true)) {
+            throw new \RuntimeException('Invalid type ' . htmlspecialchars($type) . ' given.', 1513148761);
+        }
+        return $type;
     }
 }
