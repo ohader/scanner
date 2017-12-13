@@ -137,7 +137,7 @@ class Scanner
                     $result['subject'],
                     $result['message'],
                     $result['line'],
-                    $type ?? Match::TYPE_IMPORTANT
+                    !empty($type) ? $type : Match::TYPE_IMPORTANT
                 );
                 if (!empty($result['restFiles'])) {
                     $match->setRestFiles($result['restFiles']);
