@@ -66,6 +66,7 @@ class MethodCallStaticMatcher extends AbstractCoreMatcher
                     $this->matches[] = [
                         'restFiles' => $this->matcherDefinitions[$fqdnClassWithMethod]['restFiles'],
                         'line' => $node->getAttribute('startLine'),
+                        'subject' => $fqdnClassWithMethod,
                         'message' => 'Use of static class method call "' . $fqdnClassWithMethod . '()"',
                         'indicator' => 'strong',
                     ];
