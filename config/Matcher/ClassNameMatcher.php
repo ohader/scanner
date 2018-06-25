@@ -112,6 +112,16 @@ return [
             'Breaking-80700-DeprecatedFunctionalityRemoved.rst',
         ],
     ],
+    'TYPO3\CMS\Frontend\Http\EidRequestHandler' => [
+        'restFiles' => [
+            'Deprecation-83803-DeprecateEidRequestHandler.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Http\AjaxRequestHandler' => [
+        'restFiles' => [
+            'Deprecation-83853-BackendAjaxRequestHandler.rst',
+        ],
+    ],
     'TYPO3\CMS\Frontend\Page\FramesetRenderer' => [
         'restFiles' => [
             'Breaking-80700-DeprecatedFunctionalityRemoved.rst',
@@ -447,11 +457,241 @@ return [
             'Deprecation-82903-DeprecateClientUtility.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Tree\Pagetree\ExtdirectTreeCommands' => [
+        'restFiles' => [
+            'Breaking-82426-ExtJSAndExtDirectRemoval.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\ExtDirect\ExtDirectApi' => [
+        'restFiles' => [
+            'Breaking-82426-ExtJSAndExtDirectRemoval.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\ExtDirect\ExtDirectRouter' => [
+        'restFiles' => [
+            'Breaking-82426-ExtJSAndExtDirectRemoval.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Tree\ExtDirectNode' => [
+        'restFiles' => [
+            'Breaking-82426-ExtJSAndExtDirectRemoval.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Tree\Pagetree\Commands' => [
+        'restFiles' => [
+            'Breaking-82426-ExtJSAndExtDirectRemoval.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Tree\Pagetree\DataProvider' => [
+        'restFiles' => [
+            'Breaking-82426-ExtJSAndExtDirectRemoval.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Tree\Pagetree\ExtdirectTreeDataProvider' => [
+        'restFiles' => [
+            'Breaking-82426-ExtJSAndExtDirectRemoval.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Tree\Pagetree\PagetreeNode' => [
+        'restFiles' => [
+            'Breaking-82426-ExtJSAndExtDirectRemoval.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Tree\Pagetree\PagetreeNodeCollection' => [
+        'restFiles' => [
+            'Breaking-82426-ExtJSAndExtDirectRemoval.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Tree\Renderer\ExtJsJsonTreeRenderer' => [
+        'restFiles' => [
+            'Breaking-82426-ExtJSAndExtDirectRemoval.rst',
+        ],
+    ],
+    'TYPO3\CMS\Workspaces\Hooks\PagetreeCollectionsProcessor' => [
+        'restFiles' => [
+            'Breaking-82426-ExtJSAndExtDirectRemoval.rst',
+        ],
+    ],
+    'TYPO3\CMS\SysNote\Domain\Model\SysNote' => [
+        'restFiles' => [
+            'Breaking-84055-MigrateSys_notesAwayFromExtbase.rst',
+        ],
+    ],
+    'TYPO3\CMS\Lang\Command\LanguageUpdateCommand' => [
+        'restFiles' => [
+            'Breaking-84131-RemovedClassesOfLanguageExtension.rst',
+        ],
+    ],
+    'TYPO3\CMS\Lang\Controller\LanguageController' => [
+        'restFiles' => [
+            'Breaking-84131-RemovedClassesOfLanguageExtension.rst',
+        ],
+    ],
+    'TYPO3\CMS\Lang\Domain\Model\Extension' => [
+        'restFiles' => [
+            'Breaking-84131-RemovedClassesOfLanguageExtension.rst',
+        ],
+    ],
+    'TYPO3\CMS\Lang\Domain\Model\Language' => [
+        'restFiles' => [
+            'Breaking-84131-RemovedClassesOfLanguageExtension.rst',
+        ],
+    ],
+    'TYPO3\CMS\Lang\Domain\Repository\ExtensionRepository' => [
+        'restFiles' => [
+            'Breaking-84131-RemovedClassesOfLanguageExtension.rst',
+        ],
+    ],
+    'TYPO3\CMS\Lang\Domain\Repository\LanguageRepository' => [
+        'restFiles' => [
+            'Breaking-84131-RemovedClassesOfLanguageExtension.rst',
+        ],
+    ],
+    'TYPO3\CMS\Lang\Exception' => [
+        'restFiles' => [
+            'Breaking-84131-RemovedClassesOfLanguageExtension.rst',
+        ],
+    ],
+    'TYPO3\CMS\Lang\Exception\Language' => [
+        'restFiles' => [
+            'Breaking-84131-RemovedClassesOfLanguageExtension.rst',
+        ],
+    ],
+    'TYPO3\CMS\Lang\Exception\Ter' => [
+        'restFiles' => [
+            'Breaking-84131-RemovedClassesOfLanguageExtension.rst',
+        ],
+    ],
+    'TYPO3\CMS\Lang\Exception\XmlParser' => [
+        'restFiles' => [
+            'Breaking-84131-RemovedClassesOfLanguageExtension.rst',
+        ],
+    ],
+    'TYPO3\CMS\Lang\Service\RegistryService' => [
+        'restFiles' => [
+            'Breaking-84131-RemovedClassesOfLanguageExtension.rst',
+        ],
+    ],
+    'TYPO3\CMS\Lang\Service\TerService' => [
+        'restFiles' => [
+            'Breaking-84131-RemovedClassesOfLanguageExtension.rst',
+        ],
+    ],
+    'TYPO3\CMS\Lang\Service\TranslationService' => [
+        'restFiles' => [
+            'Breaking-84131-RemovedClassesOfLanguageExtension.rst',
+        ],
+    ],
+    'TYPO3\CMS\Lang\View\AbstractJsonView' => [
+        'restFiles' => [
+            'Breaking-84131-RemovedClassesOfLanguageExtension.rst',
+        ],
+    ],
+    'TYPO3\CMS\Lang\View\Language\ActivateLanguageJson' => [
+        'restFiles' => [
+            'Breaking-84131-RemovedClassesOfLanguageExtension.rst',
+        ],
+    ],
+    'TYPO3\CMS\Lang\View\Language\DeactivateLanguageJson' => [
+        'restFiles' => [
+            'Breaking-84131-RemovedClassesOfLanguageExtension.rst',
+        ],
+    ],
+    'TYPO3\CMS\Lang\View\Language\GetTranslationsJson' => [
+        'restFiles' => [
+            'Breaking-84131-RemovedClassesOfLanguageExtension.rst',
+        ],
+    ],
+    'TYPO3\CMS\Lang\View\Language\RemoveLanguageJson' => [
+        'restFiles' => [
+            'Breaking-84131-RemovedClassesOfLanguageExtension.rst',
+        ],
+    ],
+    'TYPO3\CMS\Lang\View\Language\UpdateLanguageJson' => [
+        'restFiles' => [
+            'Breaking-84131-RemovedClassesOfLanguageExtension.rst',
+        ],
+    ],
+    'TYPO3\CMS\Lang\View\Language\UpdateTranslationJson' => [
+        'restFiles' => [
+            'Breaking-84131-RemovedClassesOfLanguageExtension.rst',
+        ],
+    ],
 
     // Removed interfaces
     'TYPO3\CMS\Backend\Form\DatabaseFileIconsHookInterface' => [
         'restFiles' => [
             'Breaking-80700-DeprecatedFunctionalityRemoved.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Tree\Pagetree\CollectionProcessorInterface' => [
+        'restFiles' => [
+            'Breaking-82426-ExtJSAndExtDirectRemoval.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Tree\EditableNodeLabelInterface' => [
+        'restFiles' => [
+            'Breaking-82426-ExtJSAndExtDirectRemoval.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Tree\DraggableAndDropableNodeInterface' => [
+        'restFiles' => [
+            'Breaking-82426-ExtJSAndExtDirectRemoval.rst',
+        ],
+    ],
+    'TYPO3\CMS\Extbase\Validation\Validator\RawValidator' => [
+        'restFiles' => [
+            'Deprecation-83503-DeprecateUnneededRawValidator.rst',
+        ],
+    ],
+    'TYPO3\CMS\Extbase\Tests\Unit\Validation\Validator\AbstractValidatorTestcase' => [
+        'restFiles' => [
+            'Deprecation-83511-DeprecateAbstractValidatorTestcase.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Package\DependencyResolver' => [
+        'restFiles' => [
+            'Deprecation-84109-DeprecateDependencyResolver.rst',
+        ],
+    ],
+    'TYPO3\CMS\Recordlist\RecordList' => [
+        'restFiles' => [
+            'Deprecation-84399-ClassRecordListRenamedToRecordListController.rst',
+        ],
+    ],
+    'TYPO3\CMS\T3editor\CodeCompletion' => [
+        'restFiles' => [
+            'Deprecation-84410-CodeCompletionRenamedToCodeCompletionController.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Form\Wizard\ImageManipulationWizard' => [
+        'restFiles' => [
+            'Deprecation-84409-ImageManipulationWizardRenamedToImageManipulationController.rst',
+        ],
+    ],
+    'TYPO3\CMS\T3editor\TypoScriptReferenceLoader' => [
+        'restFiles' => [
+            'Deprecation-84411-TypoScriptReferenceLoaderRenamedToTypoScriptReferenceController.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\PhpOptionsUtility' => [
+        'restFiles' => [
+            'Deprecation-85102-PhpOptionsUtility.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Encoding\JavaScriptEncoder' => [
+        'restFiles' => [
+            'Deprecation-85120-JavaScriptEncoder.rst',
+        ],
+    ],
+    'TYPO3\CMS\Frontend\Page\ExternalPageUrlHandler' => [
+        'restFiles' => [
+            'Deprecation-85124-RedirectingUrlHandlerHookConcept.rst',
+        ],
+    ],
+    'TYPO3\CMS\Frontend\Http\UrlHandlerInterface' => [
+        'restFiles' => [
+            'Deprecation-85124-RedirectingUrlHandlerHookConcept.rst',
         ],
     ],
 ];

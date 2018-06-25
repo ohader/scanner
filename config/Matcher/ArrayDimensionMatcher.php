@@ -74,6 +74,11 @@ return [
             'Breaking-82639-LoggingActivatedForAuthenticationAndServiceClasses.rst',
         ],
     ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'SYS\'][\'doNotCheckReferer\']' => [
+        'restFiles' => [
+            'Important-83768-RemoveReferrerCheck.rst',
+        ],
+    ],
 
     // Hooks
     '$GLOBALS[\'TYPO3_CONF_VARS\'][\'SC_OPTIONS\'][\'t3lib/class.t3lib_befunc.php\'][\'getFlexFormDSClass\']' => [
@@ -122,6 +127,42 @@ return [
     '$GLOBALS[\'TYPO3_CONF_VARS\'][\'SYS\'][\'enableDeprecationLog\']' => [
         'restFiles' => [
             'Deprecation-82438-DeprecationMethods.rst',
+        ],
+    ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'BE\'][\'fileExtensions\'][\'webspace\'][\'allow\']' => [
+        'restFiles' => [
+            'Breaking-83081-RemovedConfigurationOptionBeFileExtensionsWebspace.rst',
+        ],
+    ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'BE\'][\'fileExtensions\'][\'webspace\'][\'deny\']' => [
+        'restFiles' => [
+            'Breaking-83081-RemovedConfigurationOptionBeFileExtensionsWebspace.rst',
+        ],
+    ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'SC_OPTIONS\'][\'t3lib/class.t3lib_parsehtml_proc.php\'][\'modifyParams_LinksRte_PostProc\']' => [
+        'restFiles' => [
+            'Deprecation-83252-Link-tagSyntaxProcesssing.rst',
+        ],
+    ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'SC_OPTIONS\'][\'t3lib/class.t3lib_parsehtml_proc.php\'][\'modifyParams_LinksDb_PostProc\']' => [
+        'restFiles' => [
+            'Deprecation-83252-Link-tagSyntaxProcesssing.rst',
+        ],
+    ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'SC_OPTIONS\'][\'TYPO3\CMS\Recordlist\RecordList\DatabaseRecordList\'][\'buildQueryParameters\']' => [
+        'restFiles' => [
+            'Deprecation-83740-CleanupOfAbstractRecordListBreaksHook.rst',
+        ],
+    ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'SC_OPTIONS\'][\'tslib/class.tslib_adminpanel.php\'][\'extendAdminPanel\']' => [
+        'restFiles' => [
+            'Deprecation-84045-AdminPanelHookDeprecated.rst',
+            'Feature-84045-NewAdminPanelModuleAPI.rst',
+        ],
+    ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'SC_OPTIONS\'][\'urlProcessing\'][\'urlHandlers\']' => [
+        'restFiles' => [
+            'Deprecation-85124-RedirectingUrlHandlerHookConcept.rst',
         ],
     ],
 ];

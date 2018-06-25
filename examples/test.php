@@ -26,7 +26,10 @@ $collection = new MatcherBundleCollection(
         Matcher\MethodCallMatcher::class,
         Matcher\MethodCallStaticMatcher::class,
         Matcher\PropertyProtectedMatcher::class,
-        Matcher\PropertyPublicMatcher::class
+        Matcher\PropertyPublicMatcher::class,
+        Matcher\MethodAnnotationMatcher::class,
+        Matcher\MethodArgumentRequiredStaticMatcher::class,
+        Matcher\PropertyExistsStaticMatcher::class
     )
 );
 

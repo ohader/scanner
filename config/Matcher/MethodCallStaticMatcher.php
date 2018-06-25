@@ -470,18 +470,11 @@ return [
             'Deprecation-82899-ExtensionManagementUtilityMethods.rst',
         ],
     ],
-    'TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addNavigationComponent' => [
-        'numberOfMandatoryArguments' => 3,
-        'maximumNumberOfArguments' => 3,
+    'TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getExtensionKeyByPrefix' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
         'restFiles' => [
-            'Breaking-82899-MoreRestrictingChecksForAPIMethodsInExtensionManagementUtility.rst',
-        ],
-    ],
-    'TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile' => [
-        'numberOfMandatoryArguments' => 3,
-        'maximumNumberOfArguments' => 3,
-        'restFiles' => [
-            'Breaking-82899-MoreRestrictingChecksForAPIMethodsInExtensionManagementUtility.rst',
+            'Deprecation-82899-ExtensionManagementUtilityMethods.rst',
         ],
     ],
     'TYPO3\CMS\Core\Utility\ExtensionManagementUtility::removeCacheFiles' => [
@@ -503,6 +496,111 @@ return [
         'maximumNumberOfArguments' => 1,
         'restFiles' => [
             'Deprecation-82445-PageTranslationRelatedFunctionality.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\GeneralUtility::llXmlAutoFileName' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 3,
+        'restFiles' => [
+            'Deprecation-83083-GeneralUtilityllXmlAutoFileName.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Utility\BackendUtility::getHash' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-83116-CachingFrameworkWrapperMethodsInBackendUtility.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Utility\BackendUtility::storeHash' => [
+        'numberOfMandatoryArguments' => 3,
+        'maximumNumberOfArguments' => 3,
+        'restFiles' => [
+            'Deprecation-83116-CachingFrameworkWrapperMethodsInBackendUtility.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Utility\BackendUtility::deleteClause' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Deprecation-83118-DeleteClauseMethods.rst',
+        ],
+    ],
+    'TYPO3\CMS\Frontend\Page\PageGenerator::generatePageTitle' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Deprecation-83254-MovedPageGenerationMethodsIntoTSFE.rst',
+        ],
+    ],
+    'TYPO3\CMS\Frontend\Page\PageGenerator::isAllowedLinkVarValue' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Deprecation-83254-MovedPageGenerationMethodsIntoTSFE.rst',
+        ],
+    ],
+    'TYPO3\CMS\Extbase\Mvc\Controller\ActionController::getActionMethodParameters' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 4,
+        'restFiles' => [
+            'Deprecation-83475-AggregateValidatorInformationInClassSchema-2.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Utility\BackendUtility::getPidForModTSconfig' => [
+        'numberOfMandatoryArguments' => 3,
+        'maximumNumberOfArguments' => 3,
+        'restFiles' => [
+            'Deprecation-84994-BackendUtilitygetPidForModTSconfigDeprecated.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Utility\BackendUtility::getModTSconfig' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Deprecation-84993-DeprecateSomeTSconfigRelatedMethods.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Utility\BackendUtility::unsetMenuItems' => [
+        'numberOfMandatoryArguments' => 3,
+        'maximumNumberOfArguments' => 3,
+        'restFiles' => [
+            'Deprecation-84993-DeprecateSomeTSconfigRelatedMethods.rst',
+        ],
+    ],
+    'TYPO3\CMS\Saltedpasswords\Utility\SaltedPasswordsUtility::isUsageEnabled' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-85027-SaltedPasswordsRelatedMethodsAndClasses.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\GeneralUtility::arrayToLogString' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 3,
+        'restFiles' => [
+            'Deprecation-85086-GeneralUtilityArrayToLogString.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\PhpOptionsUtility::isSessionAutoStartEnabled' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Deprecation-85102-PhpOptionsUtility.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\PhpOptionsUtility::getIniValueBoolean' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-85102-PhpOptionsUtility.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Utility\BackendUtility::getModuleUrl' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Deprecation-85113-LegacyBackendModuleRoutingMethods.rst',
         ],
     ],
 ];
