@@ -1,5 +1,6 @@
 <?php
 declare(strict_types=1);
+
 namespace TYPO3\CMS\Scanner\Matcher;
 
 /*
@@ -19,13 +20,12 @@ use PhpParser\Node;
 use PhpParser\Node\Expr\StaticCall;
 use PhpParser\Node\Expr\Variable;
 use PhpParser\Node\Name\FullyQualified;
-use TYPO3\CMS\Scanner\CodeScannerInterface;
 
 /**
- * Find usages of static method calls which were removed / deprecated.
+ * Find usages of static method calls which gained new mandatory arguments.
  * This is a "strong" match if class name is given and "weak" if not.
  */
-class MethodArgumentDroppedStaticMatcher extends AbstractCoreMatcher implements CodeScannerInterface
+class MethodArgumentRequiredStaticMatcher extends AbstractCoreMatcher
 {
     /**
      * Prepare $this->flatMatcherDefinitions once and validate config
@@ -35,13 +35,13 @@ class MethodArgumentDroppedStaticMatcher extends AbstractCoreMatcher implements 
     public function __construct(array $matcherDefinitions)
     {
         $this->matcherDefinitions = $matcherDefinitions;
-        $this->validateMatcherDefinitions(['maximumNumberOfArguments']);
+        $this->validateMatcherDefinitions(['numberOfMandatoryArguments', 'maximumNumberOfArguments']);
         $this->initializeFlatMatcherDefinitions();
     }
 
     /**
      * Called by PhpParser.
-     * Test for "->deprecated()" (weak match)
+     * Test for "::function($1, $2, $3)" (strong match)
      *
      * @param Node $node
      */
@@ -57,16 +57,19 @@ class MethodArgumentDroppedStaticMatcher extends AbstractCoreMatcher implements 
             if ($node->class instanceof FullyQualified) {
                 // 'Foo\Bar::aMethod()' -> strong match
                 $fqdnClassWithMethod = $node->class->toString() . '::' . $node->name->name;
+                $numberOfArguments = count($node->args);
                 if (!$isArgumentUnpackingUsed
                     && in_array($fqdnClassWithMethod, array_keys($this->matcherDefinitions), true)
-                    && count($node->args) > $this->matcherDefinitions[$fqdnClassWithMethod]['maximumNumberOfArguments']
+                    && $numberOfArguments < $this->matcherDefinitions[$fqdnClassWithMethod]['numberOfMandatoryArguments']
+                    // maximum number of arguments is just a measure agains false positives
+                    && $numberOfArguments <= $this->matcherDefinitions[$fqdnClassWithMethod]['maximumNumberOfArguments']
                 ) {
                     $this->matches[] = [
                         'restFiles' => $this->matcherDefinitions[$fqdnClassWithMethod]['restFiles'],
                         'line' => $node->getAttribute('startLine'),
                         'subject' => $node->name->name,
-                        'message' => 'Method "' . $node->name->name . '()" supports only '
-                            . $this->matcherDefinitions[$fqdnClassWithMethod]['maximumNumberOfArguments']
+                        'message' => 'Method "' . $node->name->name . '()" needs at least '
+                            . $this->matcherDefinitions[$fqdnClassWithMethod]['numberOfMandatoryArguments']
                             . ' arguments.',
                         'indicator' => static::INDICATOR_STRONG,
                     ];
@@ -77,21 +80,22 @@ class MethodArgumentDroppedStaticMatcher extends AbstractCoreMatcher implements 
                 $match = [
                     'restFiles' => [],
                     'line' => $node->getAttribute('startLine'),
-                    'indicator' => static::INDICATOR_WEAK,
+                    'indicator' => 'weak',
                 ];
 
                 $numberOfArguments = count($node->args);
                 $isPossibleMatch = false;
                 foreach ($this->flatMatcherDefinitions[$node->name->name]['candidates'] as $candidate) {
                     // A method call is considered a match if it is not called with argument unpacking
-                    // and number of used arguments is higher than maximumNumberOfArguments
+                    // and number of used arguments is lesser than numberOfMandatoryArguments
                     if (!$isArgumentUnpackingUsed
-                        && $numberOfArguments > $candidate['maximumNumberOfArguments']
+                        && $numberOfArguments < $candidate['numberOfMandatoryArguments']
+                        // maximum number of arguments is just a measure agains false positives
+                        && $numberOfArguments <= $candidate['maximumNumberOfArguments']
                     ) {
                         $isPossibleMatch = true;
-                        $match['subject'] = $node->name->name;
-                        $match['message'] = 'Method "' . $node->name->name . '()" supports only '
-                            . $candidate['maximumNumberOfArguments'] . ' arguments.';
+                        $match['message'] = 'Method "' . $node->name->name . '()" needs at least '
+                            . $candidate['numberOfMandatoryArguments'] . ' arguments.';
                         $match['restFiles'] = array_unique(array_merge($match['restFiles'], $candidate['restFiles']));
                     }
                 }

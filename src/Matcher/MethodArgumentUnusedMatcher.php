@@ -27,7 +27,7 @@ use TYPO3\CMS\Scanner\CodeScannerInterface;
  * but called with:
  * ->foo('arg1', 'notNull', null, 'arg4');
  */
-class MethodArgumentUnusedMatcher extends AbstractCoreMatcher implements CodeScannerInterface
+class MethodArgumentUnusedMatcher extends AbstractCoreMatcher
 {
     /**
      * Prepare $this->flatMatcherDefinitions once and validate config
@@ -52,7 +52,7 @@ class MethodArgumentUnusedMatcher extends AbstractCoreMatcher implements CodeSca
         if (!$this->isFileIgnored($node)
             && !$this->isLineIgnored($node)
             && $node instanceof MethodCall
-            && in_array($node->name, array_keys($this->flatMatcherDefinitions), true)
+            && in_array($node->name->name, array_keys($this->flatMatcherDefinitions), true)
         ) {
             $match = [
                 'restFiles' => [],
@@ -64,19 +64,19 @@ class MethodArgumentUnusedMatcher extends AbstractCoreMatcher implements CodeSca
 
             $numberOfArguments = count($node->args);
             $isPossibleMatch = false;
-            foreach ($this->flatMatcherDefinitions[$node->name]['candidates'] as $candidate) {
+            foreach ($this->flatMatcherDefinitions[$node->name->name]['candidates'] as $candidate) {
                 foreach ($candidate['unusedArgumentNumbers'] as $droppedArgumentNumber) {
                     // A method call is considered a match if name matches, unpacking is not used
                     // and the registered argument is not given as null.
                     if (!$isArgumentUnpackingUsed
                         && $numberOfArguments >= $droppedArgumentNumber
                         && !($node->args[$droppedArgumentNumber - 1]->value instanceof ConstFetch)
-                        && (!isset($node->args[$droppedArgumentNumber - 1]->value->name->parts[0])
-                            || $node->args[$droppedArgumentNumber - 1]->value->name->parts[0] !== null)
+                        && (!isset($node->args[$droppedArgumentNumber - 1]->value->name->name->parts[0])
+                            || $node->args[$droppedArgumentNumber - 1]->value->name->name->parts[0] !== null)
                     ) {
                         $isPossibleMatch = true;
-                        $match['subject'] = $node->name;
-                        $match['message'] = 'Call to method "' . $node->name . '()" with'
+                        $match['subject'] = $node->name->name;
+                        $match['message'] = 'Call to method "' . $node->name->name . '()" with'
                             . ' argument ' . $droppedArgumentNumber . ' not given as null.';
                         $match['restFiles'] = array_unique(array_merge($match['restFiles'], $candidate['restFiles']));
                     }

@@ -50,7 +50,7 @@ class MethodArgumentRequiredMatcher extends AbstractCoreMatcher implements CodeS
         if (!$this->isFileIgnored($node)
             && !$this->isLineIgnored($node)
             && $node instanceof MethodCall
-            && in_array($node->name, array_keys($this->flatMatcherDefinitions), true)
+            && in_array($node->name->name, array_keys($this->flatMatcherDefinitions), true)
         ) {
             $match = [
                 'restFiles' => [],
@@ -62,7 +62,7 @@ class MethodArgumentRequiredMatcher extends AbstractCoreMatcher implements CodeS
 
             $numberOfArguments = count($node->args);
             $isPossibleMatch = false;
-            foreach ($this->flatMatcherDefinitions[$node->name]['candidates'] as $candidate) {
+            foreach ($this->flatMatcherDefinitions[$node->name->name]['candidates'] as $candidate) {
                 // A method call is considered a match if it is not called with argument unpacking
                 // and number of used arguments is lower than numberOfMandatoryArguments
                 if (!$isArgumentUnpackingUsed
@@ -70,8 +70,8 @@ class MethodArgumentRequiredMatcher extends AbstractCoreMatcher implements CodeS
                     && $numberOfArguments <= $candidate['maximumNumberOfArguments']
                 ) {
                     $isPossibleMatch = true;
-                    $match['subject'] = $node->name;
-                    $match['message'] = 'Method ' . $node->name . '() needs at least ' . $candidate['numberOfMandatoryArguments'] . ' arguments.';
+                    $match['subject'] = $node->name->name;
+                    $match['message'] = 'Method ' . $node->name->name . '() needs at least ' . $candidate['numberOfMandatoryArguments'] . ' arguments.';
                     $match['restFiles'] = array_unique(array_merge($match['restFiles'], $candidate['restFiles']));
                 }
             }

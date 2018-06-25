@@ -214,6 +214,201 @@ return [
             'Breaking-82639-LoggingActivatedForAuthenticationAndServiceClasses.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\FrontendBackendUserAuthentication->extPageInTreeInfo' => [
+        'restFiles' => [
+            'Breaking-81460-DeprecateGetByTagOnCacheFrontends.rst',
+        ],
+    ],
+    'TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController->lockFilePath' => [
+        'restFiles' => [
+            'Breaking-83256-RemovedLockFilePathFunctionality.rst',
+        ],
+    ],
 
     // Deprecated public properties
+    'TYPO3\CMS\Frontend\Page\PageRepository->workspaceCache' => [
+        'restFiles' => [
+            'Deprecation-81318-PublicPropertiesOfPageRepository.rst',
+        ],
+    ],
+    'TYPO3\CMS\Frontend\Page\PageRepository->error_getRootLine' => [
+        'restFiles' => [
+            'Deprecation-81318-PublicPropertiesOfPageRepository.rst',
+        ],
+    ],
+    'TYPO3\CMS\Frontend\Page\PageRepository->error_getRootLine_failPid' => [
+        'restFiles' => [
+            'Deprecation-81318-PublicPropertiesOfPageRepository.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\TypoScript\TemplateService->matchAll' => [
+        'restFiles' => [
+            'Deprecation-83273-PublicPropertiesOfTemplateService.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\TypoScript\TemplateService->whereClause' => [
+        'restFiles' => [
+            'Deprecation-83273-PublicPropertiesOfTemplateService.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\TypoScript\TemplateService->debug' => [
+        'restFiles' => [
+            'Deprecation-83273-PublicPropertiesOfTemplateService.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\TypoScript\TemplateService->allowedPaths' => [
+        'restFiles' => [
+            'Deprecation-83273-PublicPropertiesOfTemplateService.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\TypoScript\TemplateService->simulationHiddenOrTime' => [
+        'restFiles' => [
+            'Deprecation-83273-PublicPropertiesOfTemplateService.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\TypoScript\TemplateService->nextLevel' => [
+        'restFiles' => [
+            'Deprecation-83273-PublicPropertiesOfTemplateService.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\TypoScript\TemplateService->rootId' => [
+        'restFiles' => [
+            'Deprecation-83273-PublicPropertiesOfTemplateService.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\TypoScript\TemplateService->absoluteRootLine' => [
+        'restFiles' => [
+            'Deprecation-83273-PublicPropertiesOfTemplateService.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\TypoScript\TemplateService->outermostRootlineIndexWithTemplate' => [
+        'restFiles' => [
+            'Deprecation-83273-PublicPropertiesOfTemplateService.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\TypoScript\TemplateService->rowSum' => [
+        'restFiles' => [
+            'Deprecation-83273-PublicPropertiesOfTemplateService.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\TypoScript\TemplateService->sitetitle' => [
+        'restFiles' => [
+            'Deprecation-83273-PublicPropertiesOfTemplateService.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\TypoScript\TemplateService->sectionsMatch' => [
+        'restFiles' => [
+            'Deprecation-83273-PublicPropertiesOfTemplateService.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\TypoScript\TemplateService->frames' => [
+        'restFiles' => [
+            'Deprecation-83273-PublicPropertiesOfTemplateService.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\TypoScript\TemplateService->MPmap' => [
+        'restFiles' => [
+            'Deprecation-83273-PublicPropertiesOfTemplateService.rst',
+        ],
+    ],
+    'TYPO3\CMS\Impexp\Export->maxFileSize' => [
+        'restFiles' => [
+            'Deprecation-83596-ImpexpRemovedMaxFileSizeRestriction.rst',
+        ],
+    ],
+    'TYPO3\CMS\Impexp\Export->maxRecordSize' => [
+        'restFiles' => [
+            'Deprecation-83606-ImpexpSizeHandlingRemoved.rst',
+        ],
+    ],
+    'TYPO3\CMS\Impexp\Export->maxExportSize' => [
+        'restFiles' => [
+            'Deprecation-83606-ImpexpSizeHandlingRemoved.rst',
+        ],
+    ],
+    'TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController->page_cache_reg1' => [
+        'restFiles' => [
+            'Deprecation-83905-TypoScriptFrontendController-page_cache_reg1.rst',
+        ]
+    ],
+    'TYPO3\CMS\Backend\Tree\View\AbstractTreeView->dataLookup' => [
+        'restFiles' => [
+            'Deprecation-83904-ArrayHandlingInAbstractTreeView.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Tree\View\AbstractTreeView->subLevelID' => [
+        'restFiles' => [
+            'Deprecation-83904-ArrayHandlingInAbstractTreeView.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Controller\File\CreateFolderController->number' => [
+        'restFiles' => [
+            'Deprecation-84289-UseServerRequestInterfaceInFileCreateFolderController.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Controller\File\CreateFolderController->folderNumber' => [
+        'restFiles' => [
+            'Deprecation-84289-UseServerRequestInterfaceInFileCreateFolderController.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Controller\File\CreateFolderController->target' => [
+        'restFiles' => [
+            'Deprecation-84289-UseServerRequestInterfaceInFileCreateFolderController.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Controller\File\CreateFolderController->content' => [
+        'restFiles' => [
+            'Deprecation-84289-UseServerRequestInterfaceInFileCreateFolderController.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Controller\File\EditFileController->origTarget' => [
+        'restFiles' => [
+            'Deprecation-84295-UseServerRequestInterfaceInFileEditFileController.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Controller\File\EditFileController->target' => [
+        'restFiles' => [
+            'Deprecation-84295-UseServerRequestInterfaceInFileEditFileController.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Controller\File\EditFileController->doc' => [
+        'restFiles' => [
+            'Deprecation-84295-UseServerRequestInterfaceInFileEditFileController.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\FrontendBackendUserAuthentication->adminPanel' => [
+        'restFiles' => [
+            'Deprecation-84641-DeprecatedAdminPanelRelatedMethods.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\FrontendBackendUserAuthentication->extAdminConfig' => [
+        'restFiles' => [
+            'Deprecation-84641-DeprecatedAdminPanelRelatedMethods.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\FrontendBackendUserAuthentication->extAdmEnabled' => [
+        'restFiles' => [
+            'Deprecation-84641-DeprecatedAdminPanelRelatedMethods.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Charset\CharsetConverter->synonyms' => [
+        'restFiles' => [
+            'Deprecation-85122-FunctionalityInCharsetConverter.rst'
+        ],
+    ],
+    'TYPO3\CMS\Frontend\Page\PageRepository->versioningPreview' => [
+        'restFiles' => [
+            'Deprecation-85078-PageRepositoryVersioningPreview.rst',
+        ],
+    ],
+    'TYPO3\CMS\IndexedSearch\Lexer->csObj' => [
+        'restFiles' => [
+            'Deprecation-85125-UsagesOfCharsetConverterInCore.rst'
+        ],
+    ],
+    'TYPO3\CMS\IndexedSearch\Indexer->csObj' => [
+        'restFiles' => [
+            'Deprecation-85125-UsagesOfCharsetConverterInCore.rst'
+        ],
+    ],
 ];

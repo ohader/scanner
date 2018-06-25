@@ -129,4 +129,58 @@ return [
             'Deprecation-82702-SecondArgumentOfGeneralUtilitymkdir_deep.rst',
         ],
     ],
+    'TYPO3\CMS\Extbase\Persistence\Generic\Mapper\DataMapper->getPlainValue' => [
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Breaking-83241-ExtbaseRemovedCustomFunctionalityForDataMapper-getPlainValue.rst',
+        ],
+    ],
+    'TYPO3\CMS\Impexp\Controller\ImportExportController->addRecordsForPid' => [
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Deprecation-83592-ImpexpRemovedMaximumNumberOfRecordsRestriction.rst'
+        ],
+    ],
+    'TYPO3\CMS\Impexp\Controller\ImportExportController->exec_listQueryPid' => [
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Deprecation-83592-ImpexpRemovedMaximumNumberOfRecordsRestriction.rst'
+        ],
+    ],
+    'TYPO3\CMS\core\Authentication\BackendUserAuthentication->getTSConfig' => [
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Deprecation-84993-DeprecateSomeTSconfigRelatedMethods.rst'
+        ],
+    ],
+    'TYPO3\CMS\Backend\Domain\Repository\Localization\LocalizationRepository->fetchOriginLanguage' => [
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Breaking-84877-MethodsOfLocalizationRepositoryChanged.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Domain\Repository\Localization\LocalizationRepository->getLocalizedRecordCount' => [
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Breaking-84877-MethodsOfLocalizationRepositoryChanged.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Domain\Repository\Localization\LocalizationRepository->fetchAvailableLanguages' => [
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Breaking-84877-MethodsOfLocalizationRepositoryChanged.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Domain\Repository\Localization\LocalizationRepository->getRecordsToCopyDatabaseResult' => [
+        'maximumNumberOfArguments' => 4,
+        'restFiles' => [
+            'Breaking-84877-MethodsOfLocalizationRepositoryChanged.rst',
+        ],
+    ],
+    'TYPO3\CMS\Frontend\Page\PageRepository->getRootLine' => [
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Deprecation-85105-3rdMethodArgumentInPageRepository-getRootLine.rst',
+        ],
+    ],
 ];
