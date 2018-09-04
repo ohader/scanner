@@ -188,6 +188,9 @@ class Scanner
 
     private function getHigherType(string $type, string $fileType): string
     {
+        if (empty($type)) {
+            return $fileType;
+        }
         return ($this->typeRanking[$fileType] > $this->typeRanking[$type]) ? $fileType : $type;
     }
 }
