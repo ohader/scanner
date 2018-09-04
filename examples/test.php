@@ -9,7 +9,7 @@ error_reporting(E_ALL ^ E_NOTICE);
 
 $collection = new MatcherBundleCollection(
     new \TYPO3\CMS\Scanner\Domain\Model\MatcherBundle(
-        __DIR__ . '/../config/Matcher',
+        __DIR__ . '/../config/Matcher/v9',
         '../TYPO3.CMS/typo3/sysext/core/Documentation/Changelog',
 
         Matcher\ArrayDimensionMatcher::class,
