@@ -180,9 +180,7 @@ class Scanner
 
     private function extractFileType(string $restFile): string
     {
-        $normalizedFile = str_replace('\\', '/', $restFile);
-        $paths = explode('/', $normalizedFile);
-        $fileType = explode('-', array_pop($paths))[0];
+        list($fileType) = explode('-', basename($restFile));
         return strtoupper($fileType);
     }
 
