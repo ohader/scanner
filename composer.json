@@ -19,8 +19,15 @@
         "TYPO3\\CMS\\Scanner\\Tests\\": "tests/"
       }
     },
+    "config": {
+        "bin-dir": ".Build/bin",
+        "vendor-dir": ".Build/vendor"
+    },
     "require": {
-        "nikic/php-parser": "4.0",
+        "nikic/php-parser": "^4.0",
         "symfony/finder": "^3.3 || ^4.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7"
     }
 }
