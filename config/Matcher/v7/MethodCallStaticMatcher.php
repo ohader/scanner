@@ -120,4 +120,11 @@ return [
             'Breaking-61820-PhpOptionsUtilityDeprecatedFunctionsRemoved.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Utility\GeneralUtility::int_from_ver' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-61860-RemoveIntFromVerFunction.rst',
+        ],
+    ],
 ];
