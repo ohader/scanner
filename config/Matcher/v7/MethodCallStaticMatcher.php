@@ -92,4 +92,11 @@ return [
             'Breaking-61785-FrontendTcaFunctionsRemoved.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Utility\GeneralUtility::loadTCA' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-61785-LoadTcaFunctionRemoved.rst',
+        ],
+    ],
 ];
