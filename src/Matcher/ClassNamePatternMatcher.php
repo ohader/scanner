@@ -60,7 +60,7 @@ class ClassNamePatternMatcher extends AbstractCoreMatcher
             'line' => $node->getAttribute('startLine'),
             'subject' => $fullyQualifiedClassName,
             'message' => 'Usage of class "' . $fullyQualifiedClassName . '"',
-            'indicator' => 'strong',
+            'indicator' => static::INDICATOR_STRONG,
         ];
     }
 

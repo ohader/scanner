@@ -56,7 +56,7 @@ class PropertyExistsStaticMatcher extends AbstractCoreMatcher
                 'line' => $node->getAttribute('startLine'),
                 'subject' => $node->props[0]->name->name,
                 'message' => 'Use of property "' . $node->props[0]->name->name . '"',
-                'indicator' => 'weak',
+                'indicator' => static::INDICATOR_WEAK,
             ];
             $this->matches[] = $match;
         }

@@ -68,7 +68,7 @@ class MethodCallStaticMatcher extends AbstractCoreMatcher
                         'line' => $node->getAttribute('startLine'),
                         'subject' => $fqdnClassWithMethod,
                         'message' => 'Use of static class method call "' . $fqdnClassWithMethod . '()"',
-                        'indicator' => 'strong',
+                        'indicator' => static::INDICATOR_STRONG,
                     ];
                 }
             } elseif ($node->class instanceof Variable
