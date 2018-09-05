@@ -22,7 +22,7 @@ return [
             'Breaking-53542-DeprecatedCodeRemovalInFluid.rst',
         ],
     ],
-    'TYPO3\CMS\Core\DataHandling\DataHandler::getUniqueFields' => [
+    'TYPO3\CMS\Core\DataHandling\DataHandler->getUniqueFields' => [
         'numberOfMandatoryArguments' => 1,
         'maximumNumberOfArguments' => 1,
         'restFiles' => [
