@@ -29,4 +29,18 @@ return [
             'Breaking-61822-GetUniqueFieldsFunctionRemoved.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Template\DocumentTemplate->formatTime' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Breaking-62038-RemovedDocumentTemplateOptions.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Template\DocumentTemplate->menuTable' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 3,
+        'restFiles' => [
+            'Breaking-62038-RemovedDocumentTemplateOptions.rst',
+        ],
+    ],
 ];
