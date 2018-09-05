@@ -81,7 +81,7 @@ class MethodArgumentRequiredStaticMatcher extends AbstractCoreMatcher
                 $match = [
                     'restFiles' => [],
                     'line' => $node->getAttribute('startLine'),
-                    'indicator' => 'weak',
+                    'indicator' => static::INDICATOR_WEAK,
                 ];
 
                 $numberOfArguments = count($node->args);

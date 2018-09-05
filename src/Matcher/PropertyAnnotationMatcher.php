@@ -55,7 +55,7 @@ class PropertyAnnotationMatcher extends AbstractCoreMatcher
             $match = [
                 'restFiles' => [],
                 'line' => $property->getAttribute('startLine'),
-                'indicator' => 'strong',
+                'indicator' => static::INDICATOR_STRONG,
             ];
 
             $matches = [];
