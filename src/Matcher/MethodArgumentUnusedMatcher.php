@@ -18,7 +18,6 @@ namespace TYPO3\CMS\Scanner\Matcher;
 use PhpParser\Node;
 use PhpParser\Node\Expr\ConstFetch;
 use PhpParser\Node\Expr\MethodCall;
-use TYPO3\CMS\Scanner\CodeScannerInterface;
 
 /**
  * Match method usages where arguments "in between" are unused but not given as "null":
