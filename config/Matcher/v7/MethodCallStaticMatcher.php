@@ -106,4 +106,18 @@ return [
             'Breaking-61802-IsLocalconfWritableFunctionRemoved.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Utility\PhpOptionsUtility::isSafeModeEnabled' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-61820-PhpOptionsUtilityDeprecatedFunctionsRemoved.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\PhpOptionsUtility::isMagicQuotesGpcEnabled' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-61820-PhpOptionsUtilityDeprecatedFunctionsRemoved.rst',
+        ],
+    ],
 ];
