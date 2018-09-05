@@ -40,4 +40,9 @@ return [
             'Breaking-61890-Remove-TBE-Styling-From-FormEngine.rst',
         ],
     ],
+    '$GLOBALS[\'TBE_STYLES\'][\'mainColors\']' => [
+        'restFiles' => [
+            'Breaking-62039-RemovedTBE_StylesMainColors.rst',
+        ],
+    ],
 ];
