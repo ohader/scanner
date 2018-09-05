@@ -95,6 +95,7 @@ class MethodArgumentRequiredStaticMatcher extends AbstractCoreMatcher
                         && $numberOfArguments <= $candidate['maximumNumberOfArguments']
                     ) {
                         $isPossibleMatch = true;
+                        $match['subject'] = $node->name->name;
                         $match['message'] = 'Method "' . $node->name->name . '()" needs at least '
                             . $candidate['numberOfMandatoryArguments'] . ' arguments.';
                         $match['restFiles'] = array_unique(array_merge($match['restFiles'], $candidate['restFiles']));
