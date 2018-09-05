@@ -25,4 +25,19 @@ return [
             'Breaking-61783-RemoveDeprecatedMailFunctionality.rst',
         ],
     ],
+    '$GLOBALS[\'TBE_STYLES\'][\'colorschemes\']' => [
+        'restFiles' => [
+            'Breaking-61890-Remove-TBE-Styling-From-FormEngine.rst',
+        ],
+    ],
+    '$GLOBALS[\'TBE_STYLES\'][\'styleschemes\']' => [
+        'restFiles' => [
+            'Breaking-61890-Remove-TBE-Styling-From-FormEngine.rst',
+        ],
+    ],
+    '$GLOBALS[\'TBE_STYLES\'][\'borderschemes\']' => [
+        'restFiles' => [
+            'Breaking-61890-Remove-TBE-Styling-From-FormEngine.rst',
+        ],
+    ],
 ];
