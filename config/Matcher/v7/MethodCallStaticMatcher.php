@@ -78,4 +78,18 @@ return [
             'Breaking-61783-RemoveDeprecatedMailFunctionality.rst',
         ],
     ],
+    'TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController::getCompressedTCarray' => [
+        'numberOfMandatoryArguments' => 3,
+        'maximumNumberOfArguments' => 7,
+        'restFiles' => [
+            'Breaking-61785-FrontendTcaFunctionsRemoved.rst',
+        ],
+    ],
+    'TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController::includeTCA' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-61785-FrontendTcaFunctionsRemoved.rst',
+        ],
+    ],
 ];
