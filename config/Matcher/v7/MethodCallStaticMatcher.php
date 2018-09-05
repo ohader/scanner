@@ -57,4 +57,11 @@ return [
             'Breaking-59659-DeprecatedCodeRemovalInBackendSysext.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Utility\GeneralUtility::formatSize' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Breaking-60152-formatSizeAdheresLocale.rst',
+        ],
+    ],
 ];
