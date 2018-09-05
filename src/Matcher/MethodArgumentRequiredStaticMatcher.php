@@ -75,6 +75,7 @@ class MethodArgumentRequiredStaticMatcher extends AbstractCoreMatcher
                     ];
                 }
             } elseif ($node->class instanceof Variable
+                && isset($node->name->name)
                 && in_array($node->name->name, array_keys($this->flatMatcherDefinitions), true)
             ) {
                 $match = [

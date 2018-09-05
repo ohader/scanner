@@ -49,6 +49,7 @@ class PropertyProtectedMatcher extends AbstractCoreMatcher
             && $node instanceof PropertyFetch
             && $node->name instanceof Identifier
             && $node->var->name !== 'this'
+            && isset($node->name->name)
             && in_array($node->name->name, array_keys($this->flatMatcherDefinitions), true)
         ) {
             $match = [

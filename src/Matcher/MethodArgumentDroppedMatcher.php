@@ -51,6 +51,7 @@ class MethodArgumentDroppedMatcher extends AbstractCoreMatcher implements CodeSc
         if (!$this->isFileIgnored($node)
             && !$this->isLineIgnored($node)
             && $node instanceof MethodCall
+            && isset($node->name->name)
             && in_array($node->name->name, array_keys($this->flatMatcherDefinitions), true)
         ) {
             $match = [
