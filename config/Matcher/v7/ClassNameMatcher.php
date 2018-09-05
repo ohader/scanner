@@ -21,4 +21,9 @@ return [
             'Breaking-61782-DeprecatedDocumentTemplateClassesRemoved.rst',
         ],
     ],
+    'TYPO3\CMS\Extbase\Service\TypeHandlingService' => [
+        'restFiles' => [
+            'Breaking-61786-ExtbaseDeprecatedTypeHandlingServiceRemoved.rst',
+        ],
+    ],
 ];
