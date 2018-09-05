@@ -20,4 +20,9 @@ return [
             'Breaking-61781-IncludeOnceArrayOfClickMenuControllerRemoved.rst',
         ],
     ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'SC_OPTIONS\'][\'t3lib/utility/class.t3lib_utility_mail.php\'][\'substituteMailDelivery\']' => [
+        'restFiles' => [
+            'Breaking-61783-RemoveDeprecatedMailFunctionality.rst',
+        ],
+    ],
 ];

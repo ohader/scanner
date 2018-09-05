@@ -64,4 +64,18 @@ return [
             'Breaking-60152-formatSizeAdheresLocale.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Utility\MailUtility::mail' => [
+        'numberOfMandatoryArguments' => 3,
+        'maximumNumberOfArguments' => 5,
+        'restFiles' => [
+            'Breaking-61783-RemoveDeprecatedMailFunctionality.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\GeneralUtility::plainMailEncoded' => [
+        'numberOfMandatoryArguments' => 3,
+        'maximumNumberOfArguments' => 7,
+        'restFiles' => [
+            'Breaking-61783-RemoveDeprecatedMailFunctionality.rst',
+        ],
+    ],
 ];
