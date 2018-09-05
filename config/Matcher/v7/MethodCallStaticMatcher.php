@@ -99,4 +99,11 @@ return [
             'Breaking-61785-LoadTcaFunctionRemoved.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLocalconfWritable' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-61802-IsLocalconfWritableFunctionRemoved.rst',
+        ],
+    ],
 ];
