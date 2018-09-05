@@ -58,6 +58,7 @@ class InterfaceMethodChangedMatcher extends AbstractCoreMatcher
 
         // Match method name of a class, must be public, wouldn't make sense as interface if protected/private
         if ($node instanceof ClassMethod
+            && isset($node->name->name)
             && in_array($node->name->name, array_keys($this->matcherDefinitions), true)
             && $node->flags & Class_::MODIFIER_PUBLIC // public
             && ($node->flags & Class_::MODIFIER_STATIC) !== Class_::MODIFIER_STATIC // not static
@@ -81,6 +82,7 @@ class InterfaceMethodChangedMatcher extends AbstractCoreMatcher
 
         // Match method call (not static) with number of arguments
         if ($node instanceof MethodCall
+            && isset($node->name->name)
             && in_array($node->name->name, array_keys($this->matcherDefinitions), true)
         ) {
             $methodName = $node->name->name;
