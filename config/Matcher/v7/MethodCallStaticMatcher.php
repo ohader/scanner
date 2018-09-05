@@ -127,4 +127,11 @@ return [
             'Breaking-61860-RemoveIntFromVerFunction.rst',
         ],
     ],
+    'TYPO3\CMS\Frontend\Utility\EidUtility::connectDB' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-61863-ConnectDbFunctionRemoved.rst',
+        ],
+    ],
 ];
