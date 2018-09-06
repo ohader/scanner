@@ -793,4 +793,11 @@ return [
             'Deprecation-65111-getDynTabMenu.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Database\ReferenceIndex->error' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-65465-ReferenceIndexErrorLog.rst',
+        ],
+    ],
 ];

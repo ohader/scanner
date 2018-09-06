@@ -121,4 +121,9 @@ return [
             'Deprecation-65381-DataHandlerStripslashesValuesProperty.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Database\ReferenceIndex->errorLog' => [
+        'restFiles' => [
+            'Deprecation-65465-ReferenceIndexErrorLog.rst',
+        ],
+    ],
 ];
