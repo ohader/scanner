@@ -106,4 +106,9 @@ return [
             'Deprecation-63324-DataHandler-IncludeFileFunctions.rst',
         ],
     ],
+    'TYPO3\CMS\Core\DataHandling\DataHandler->exclude_array' => [
+        'restFiles' => [
+            'Breaking-63784-DataHandlerExcludeArray.rst',
+        ],
+    ],
 ];
