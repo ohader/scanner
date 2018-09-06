@@ -680,4 +680,25 @@ return [
             'Deprecation-64388-ContentObjectMethods.rst',
         ],
     ],
+    'TYPO3\CMS\CssStyledContent\Controller\CssStyledContentController->render_bullets' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Deprecation-64711-UnusedCssStyledContentMethods.rst',
+        ],
+    ],
+    'TYPO3\CMS\CssStyledContent\Controller\CssStyledContentController->render_uploads' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Deprecation-64711-UnusedCssStyledContentMethods.rst',
+        ],
+    ],
+    'TYPO3\CMS\CssStyledContent\Controller\CssStyledContentController->beautifyFileLink' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 4,
+        'restFiles' => [
+            'Deprecation-64711-UnusedCssStyledContentMethods.rst',
+        ],
+    ],
 ];
