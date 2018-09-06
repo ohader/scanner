@@ -225,4 +225,11 @@ return [
             'Deprecation-65956-DebugUtilityDebugRows.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Imaging\GraphicalFunctions::pngToGifByImagemagick' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-66906-FunctionalityPngToGifConversion.rst',
+        ],
+    ],
 ];
