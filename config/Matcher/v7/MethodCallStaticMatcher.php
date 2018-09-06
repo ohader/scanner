@@ -218,4 +218,11 @@ return [
             'Deprecation-64068-ThumbnailView.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Utility\DebugUtility::debugRows' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 3,
+        'restFiles' => [
+            'Deprecation-65956-DebugUtilityDebugRows.rst',
+        ],
+    ],
 ];
