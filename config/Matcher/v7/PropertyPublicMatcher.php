@@ -86,4 +86,9 @@ return [
             'Breaking-62673-ExtbaseDeprecatedCodeRemoved.rst',
         ],
     ],
+    'TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController->JSeventFuncCalls' => [
+        'restFiles' => [
+            'Deprecation-62363-TSFE-JSfuncCalls.rst',
+        ],
+    ],
 ];
