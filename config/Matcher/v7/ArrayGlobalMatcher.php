@@ -95,4 +95,9 @@ return [
             'Breaking-64668-MailformMovedToLegacyExtension.rst',
         ],
     ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'SC_OPTIONS\'][\'GLOBAL\'][\'softRefParser_GL\']' => [
+        'restFiles' => [
+            'Deprecation-64109-Hook-softRefParserGL.rst',
+        ],
+    ],
 ];
