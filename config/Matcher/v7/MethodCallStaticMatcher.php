@@ -176,4 +176,25 @@ return [
             'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Utility\GeneralUtility::quoted_printable' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Deprecation-62794-DeprecateOldMailMethodsInGeneralUtility.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\GeneralUtility::encodeHeader' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 3,
+        'restFiles' => [
+            'Deprecation-62794-DeprecateOldMailMethodsInGeneralUtility.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\GeneralUtility::substUrlsInPlainText' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 3,
+        'restFiles' => [
+            'Deprecation-62794-DeprecateOldMailMethodsInGeneralUtility.rst',
+        ],
+    ],
 ];
