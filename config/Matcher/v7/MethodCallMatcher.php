@@ -821,4 +821,18 @@ return [
             'Deprecation-65934-PrefixLocalAnchorsMovedToLegacyExtension.rst',
         ],
     ],
+        'TYPO3\CMS\Extbase\Persistence\Generic\Backend->setDeletedObjects' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-63835-RemoveDeprecatedExtbasePersistenceParts.rst',
+        ],
+    ],
+    'TYPO3\CMS\Extbase\Persistence\Repository->replace' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Breaking-63835-RemoveDeprecatedExtbasePersistenceParts.rst',
+        ],
+    ],
 ];
