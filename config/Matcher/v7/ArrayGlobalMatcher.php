@@ -60,4 +60,9 @@ return [
             'Deprecation-62988-DocumentTemplateFunctions.rst',
         ],
     ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'SYS\'][\'compat_version\']' => [
+        'restFiles' => [
+            'Breaking-24900-CompatVersion-Setting-Removed.rst',
+        ],
+    ],
 ];
