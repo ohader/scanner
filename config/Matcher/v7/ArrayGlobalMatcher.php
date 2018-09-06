@@ -105,4 +105,9 @@ return [
             'Breaking-65432-ModuleUriInGlobalVarRemoved.rst',
         ],
     ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'FE\'][\'activateContentAdapter\']' => [
+        'restFiles' => [
+            'Breaking-66034-DropContentAdapter.rst',
+        ],
+    ],
 ];
