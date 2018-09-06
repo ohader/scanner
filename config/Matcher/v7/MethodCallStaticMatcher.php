@@ -197,4 +197,11 @@ return [
             'Deprecation-62794-DeprecateOldMailMethodsInGeneralUtility.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Utility\BackendUtility::helpTextIcon' => [
+        'numberOfMandatoryArguments' => 3,
+        'maximumNumberOfArguments' => 4,
+        'restFiles' => [
+            'Deprecation-62864-HelpTextIcon.rst',
+        ],
+    ],
 ];
