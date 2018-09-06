@@ -103,4 +103,9 @@ return [
             'Breaking-62673-ExtbaseDeprecatedCodeRemoved.rst',
         ],
     ],
+    'TYPO3\CMS\Fluid\Core\Parser\SyntaxTree\RenderingContextAwareInterface' => [
+        'restFiles' => [
+            'Breaking-66754-RemoveRenderingContextAwareInterface.rst',
+        ],
+    ],
 ];
