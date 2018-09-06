@@ -386,4 +386,11 @@ return [
             'Breaking-62673-ExtbaseDeprecatedCodeRemoved.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Template\DocumentTemplate->endPageJS' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Deprecation-62795-DocumentTemplateJavaScript.rst',
+        ],
+    ],
 ];
