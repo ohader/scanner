@@ -41,4 +41,16 @@ return [
             'Breaking-62670-DeprecatedCodeRemovalInMultipleSysexts.rst',
         ],
     ],
+
+    // Removed interfaces
+    'TYPO3\CMS\Extbase\Persistence\Generic\Qom\QueryObjectModelConstantsInterface' => [
+        'restFiles' => [
+            'Breaking-62673-ExtbaseDeprecatedCodeRemoved.rst',
+        ],
+    ],
+    'TYPO3\CMS\Extbase\Persistence\Generic\Qom\QueryObjectModelFactoryInterface' => [
+        'restFiles' => [
+            'Breaking-62673-ExtbaseDeprecatedCodeRemoved.rst',
+        ],
+    ],
 ];

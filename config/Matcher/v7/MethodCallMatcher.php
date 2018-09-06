@@ -351,4 +351,39 @@ return [
             'Breaking-62670-DeprecatedCodeRemovalInMultipleSysexts.rst',
         ],
     ],
+    'TYPO3\CMS\Extbase\Object\ObjectManager->create' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62673-ExtbaseDeprecatedCodeRemoved.rst',
+        ],
+    ],
+    'TYPO3\CMS\Extbase\Object\ObjectManagerInterface->create' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62673-ExtbaseDeprecatedCodeRemoved.rst',
+        ],
+    ],
+    'TYPO3\CMS\Extbase\Persistence\Generic\Backend->replaceObject' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Breaking-62673-ExtbaseDeprecatedCodeRemoved.rst',
+        ],
+    ],
+    'TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings->setReturnRawQueryResult' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62673-ExtbaseDeprecatedCodeRemoved.rst',
+        ],
+    ],
+    'TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings->setSysLanguageUid' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62673-ExtbaseDeprecatedCodeRemoved.rst',
+        ],
+    ],
 ];
