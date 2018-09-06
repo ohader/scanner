@@ -239,4 +239,116 @@ return [
             'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
         ],
     ],
+    'TYPO3\CMS\Lang\LanguageService->JScharCode' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62670-DeprecatedCodeRemovalInMultipleSysexts.rst',
+        ],
+    ],
+    'TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer->joinTSarrays' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Breaking-62670-DeprecatedCodeRemovalInMultipleSysexts.rst',
+        ],
+    ],
+    'TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController->tidyHTML' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62670-DeprecatedCodeRemovalInMultipleSysexts.rst',
+        ],
+    ],
+    'TYPO3\CMS\Recordlist\Browser\ElementBrowser->isWebFolder' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62670-DeprecatedCodeRemovalInMultipleSysexts.rst',
+        ],
+    ],
+    'TYPO3\CMS\Recordlist\Browser\ElementBrowser->checkFolder' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62670-DeprecatedCodeRemovalInMultipleSysexts.rst',
+        ],
+    ],
+    'TYPO3\CMS\Recordlist\RecordList\AbstractDatabaseRecordList->getTreeObject' => [
+        'numberOfMandatoryArguments' => 3,
+        'maximumNumberOfArguments' => 3,
+        'restFiles' => [
+            'Breaking-62670-DeprecatedCodeRemovalInMultipleSysexts.rst',
+        ],
+    ],
+    'TYPO3\CMS\Filelist\FileList->dirData' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62670-DeprecatedCodeRemovalInMultipleSysexts.rst',
+        ],
+    ],
+    'TYPO3\CMS\Frontend\ContentObject\FilesContentObject->stdWrapValue' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 3,
+        'restFiles' => [
+            'Breaking-62670-DeprecatedCodeRemovalInMultipleSysexts.rst',
+        ],
+    ],
+    'TYPO3\CMS\Impexp\Controller\ImportExportController->userTempFolder' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-62670-DeprecatedCodeRemovalInMultipleSysexts.rst',
+        ],
+    ],
+    'TYPO3\CMS\Impexp\Controller\ImportExportController->userSaveFolder' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-62670-DeprecatedCodeRemovalInMultipleSysexts.rst',
+        ],
+    ],
+    'TYPO3\CMS\IndexedSearch\Hook\CrawlerHook->loadIndexerClass' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-62670-DeprecatedCodeRemovalInMultipleSysexts.rst',
+        ],
+    ],
+    'TYPO3\CMS\Lowlevel\View\DatabaseIntegrityView->func_filesearch' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-62670-DeprecatedCodeRemovalInMultipleSysexts.rst',
+        ],
+    ],
+    'TYPO3\CMS\Lowlevel\View\DatabaseIntegrityView->findFile' => [
+        'numberOfMandatoryArguments' => 4,
+        'maximumNumberOfArguments' => 4,
+        'restFiles' => [
+            'Breaking-62670-DeprecatedCodeRemovalInMultipleSysexts.rst',
+        ],
+    ],
+    'TYPO3\CMS\Rtehtmlarea\RteHtmlAreaBase->buildStyleSheet' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-62670-DeprecatedCodeRemovalInMultipleSysexts.rst',
+        ],
+    ],
+    'TYPO3\CMS\Rtehtmlarea\RteHtmlAreaBase->loremIpsumInsert' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62670-DeprecatedCodeRemovalInMultipleSysexts.rst',
+        ],
+    ],
+    'TYPO3\CMS\Workspaces\Service\StagesService->checkCustomStagingForWS' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-62670-DeprecatedCodeRemovalInMultipleSysexts.rst',
+        ],
+    ],
 ];

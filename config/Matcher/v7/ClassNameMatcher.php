@@ -36,4 +36,9 @@ return [
             'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
         ],
     ],
+    'TYPO3\CMS\Scheduler\Task\FileIndexingTask' => [
+        'restFiles' => [
+            'Breaking-62670-DeprecatedCodeRemovalInMultipleSysexts.rst',
+        ],
+    ],
 ];

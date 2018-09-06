@@ -71,4 +71,9 @@ return [
             'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
         ],
     ],
+    'TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController->absRefPrefix_force' => [
+        'restFiles' => [
+            'Breaking-62670-DeprecatedCodeRemovalInMultipleSysexts.rst',
+        ],
+    ],
 ];
