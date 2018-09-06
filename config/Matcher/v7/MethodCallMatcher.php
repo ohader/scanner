@@ -477,4 +477,11 @@ return [
             'Deprecation-64134-TypoScriptTemplateObjectBrowserModuleFunctionController-verify_TSobjects.rst',
         ],
     ],
+    'TYPO3\CMS\Core\TypoScript\ExtendedTemplateService->ext_getKeyImage' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-64147-ConstantEditorFunctions.rst',
+        ],
+    ],
 ];
