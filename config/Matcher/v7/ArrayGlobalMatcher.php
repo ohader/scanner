@@ -80,4 +80,19 @@ return [
             'Breaking-64643-RemoveEnableTypo3tempDbTracking.rst',
         ],
     ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'FE\'][\'secureFormmail\']' => [
+        'restFiles' => [
+            'Breaking-64668-MailformMovedToLegacyExtension.rst',
+        ],
+    ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'FE\'][\'strictFormmail\']' => [
+        'restFiles' => [
+            'Breaking-64668-MailformMovedToLegacyExtension.rst',
+        ],
+    ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'FE\'][\'formmailMaxAttachmentSize\']' => [
+        'restFiles' => [
+            'Breaking-64668-MailformMovedToLegacyExtension.rst',
+        ],
+    ],
 ];
