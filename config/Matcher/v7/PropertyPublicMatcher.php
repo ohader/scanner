@@ -111,4 +111,9 @@ return [
             'Breaking-63784-DataHandlerExcludeArray.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Authentication\BackendUserAuthentication->OS' => [
+        'restFiles' => [
+            'Deprecation-65343-BackendUserOsProperty.rst',
+        ],
+    ],
 ];
