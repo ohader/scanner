@@ -470,4 +470,11 @@ return [
             'Deprecation-60559-MakeLoginBoxImage.rst',
         ],
     ],
+    'TYPO3\CMS\Tstemplate\Controller\TypoScriptTemplateObjectBrowserModuleFunctionController->verify_TSobjects' => [
+        'numberOfMandatoryArguments' => 3,
+        'maximumNumberOfArguments' => 3,
+        'restFiles' => [
+            'Deprecation-64134-TypoScriptTemplateObjectBrowserModuleFunctionController-verify_TSobjects.rst',
+        ],
+    ],
 ];
