@@ -116,4 +116,9 @@ return [
             'Deprecation-65343-BackendUserOsProperty.rst',
         ],
     ],
+    'TYPO3\CMS\Core\DataHandling\DataHandler->$stripslashes_values' => [
+        'restFiles' => [
+            'Deprecation-65381-DataHandlerStripslashesValuesProperty.rst',
+        ],
+    ],
 ];
