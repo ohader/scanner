@@ -81,6 +81,11 @@ return [
             'Deprecation-66065-BackendLogoViewDeprecated.rst',
         ],
     ],
+    'TYPO3\CMS\Extbase\Persistence\Generic\IdentityMap' => [
+        'restFiles' => [
+            'Breaking-66429-RemoveIdentityMapFromPersistence.rst',
+        ],
+    ],
 
     // Removed interfaces
     'TYPO3\CMS\Extbase\Persistence\Generic\Qom\QueryObjectModelConstantsInterface' => [
