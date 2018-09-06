@@ -468,6 +468,7 @@ return [
         'maximumNumberOfArguments' => 0,
         'restFiles' => [
             'Deprecation-60559-MakeLoginBoxImage.rst',
+            'Breaking-65939-BackendLoginRefactoring.rst',
         ],
     ],
     'TYPO3\CMS\Tstemplate\Controller\TypoScriptTemplateObjectBrowserModuleFunctionController->verify_TSobjects' => [
@@ -699,6 +700,34 @@ return [
         'maximumNumberOfArguments' => 4,
         'restFiles' => [
             'Deprecation-64711-UnusedCssStyledContentMethods.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Controller\LoginController->wrapLoginForm' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-65939-BackendLoginRefactoring.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Controller\LoginController->makeLoginNews' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-65939-BackendLoginRefactoring.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Controller\LoginController->makeLoginForm' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-65939-BackendLoginRefactoring.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Controller\LoginController->makeLogoutForm' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-65939-BackendLoginRefactoring.rst',
         ],
     ],
 ];
