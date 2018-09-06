@@ -120,4 +120,9 @@ return [
             'Deprecation-47712-DeprecateOldLockingAPI.rst',
         ],
     ],
+    '$GLOBALS[\'TBE_STYLES\'][\'logo_login\']' => [
+        'restFiles' => [
+            'Deprecation-66431-NewLoginScreen.rst',
+        ],
+    ],
 ];
