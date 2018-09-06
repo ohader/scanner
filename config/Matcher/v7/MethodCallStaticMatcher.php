@@ -204,4 +204,11 @@ return [
             'Deprecation-62864-HelpTextIcon.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Utility\BackendUtility->implodeTSParams' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Deprecation-46523-BackendUtilityImplodeTSParams.rst',
+        ],
+    ],
 ];
