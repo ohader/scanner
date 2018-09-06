@@ -909,7 +909,14 @@ return [
         'numberOfMandatoryArguments' => 0,
         'maximumNumberOfArguments' => 0,
         'restFiles' => [
-            'Deprecation-66905-ClassicPageModuleAndEditRegularContentFromId',
+            'Deprecation-66905-ClassicPageModuleAndEditRegularContentFromId.rst',
+        ],
+    ],
+    'TYPO3\CMS\T3editor\T3editor->isEnabled' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Deprecation-67171-T3editorIsEnabled.rst',
         ],
     ],
 ];
