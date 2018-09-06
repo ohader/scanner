@@ -730,4 +730,39 @@ return [
             'Breaking-65939-BackendLoginRefactoring.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Page\PageRenderer->setSvgPath' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-65962-WebSVGLibraryAndAPIRemoved.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Page\PageRenderer->getSvgPath' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-65962-WebSVGLibraryAndAPIRemoved.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Page\PageRenderer->loadSvg' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-65962-WebSVGLibraryAndAPIRemoved.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Page\PageRenderer->enableSvgDebug' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-65962-WebSVGLibraryAndAPIRemoved.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Page\PageRenderer->svgForceFlash' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-65962-WebSVGLibraryAndAPIRemoved.rst',
+        ],
+    ],
 ];
