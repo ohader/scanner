@@ -842,4 +842,11 @@ return [
             'Breaking-66707-IssueCommandNowAddsQuotesWhenUsedInJSContext.rst',
         ],
     ],
+    'TYPO3\CMS\Extbase\DomainObject\AbstractDomainObject->initializeObject' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-67402-ExtbaseAbstractDomainObjectInitializeObject.rst',
+        ],
+    ],
 ];
