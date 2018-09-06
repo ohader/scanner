@@ -400,4 +400,25 @@ return [
             'Deprecation-62854-Deprecate-pi_list_searchBox.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Template\DocumentTemplate->dfw' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-62988-DocumentTemplateFunctions.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Template\DocumentTemplate->rfw' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-62988-DocumentTemplateFunctions.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Template\DocumentTemplate->collapseableSection' => [
+        'numberOfMandatoryArguments' => 3,
+        'maximumNumberOfArguments' => 4,
+        'restFiles' => [
+            'Deprecation-62988-DocumentTemplateFunctions.rst',
+        ],
+    ],
 ];

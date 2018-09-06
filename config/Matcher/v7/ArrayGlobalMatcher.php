@@ -55,4 +55,9 @@ return [
             'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
         ],
     ],
+    '$GLOBALS[\'TBE_STYLES\'][\'background\']' => [
+        'restFiles' => [
+            'Deprecation-62988-DocumentTemplateFunctions.rst',
+        ],
+    ],
 ];
