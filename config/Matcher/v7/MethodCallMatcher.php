@@ -856,4 +856,46 @@ return [
             'Breaking-67402-ExtbaseAbstractDomainObjectWakeUp.rst',
         ],
     ],
+    'TYPO3\CMS\Core\DataHandling\DataHandler->checkValue_text' => [
+        'numberOfMandatoryArguments' => 4,
+        'maximumNumberOfArguments' => 5,
+        'restFiles' => [
+            'Deprecation-63735-DeprecateDataHandlerCheckValueMethods.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\DataHandling\DataHandler->checkValue_input' => [
+        'numberOfMandatoryArguments' => 4,
+        'maximumNumberOfArguments' => 5,
+        'restFiles' => [
+            'Deprecation-63735-DeprecateDataHandlerCheckValueMethods.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\DataHandling\DataHandler->checkValue_check' => [
+        'numberOfMandatoryArguments' => 4,
+        'maximumNumberOfArguments' => 5,
+        'restFiles' => [
+            'Deprecation-63735-DeprecateDataHandlerCheckValueMethods.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\DataHandling\DataHandler->checkValue_radio' => [
+        'numberOfMandatoryArguments' => 4,
+        'maximumNumberOfArguments' => 4,
+        'restFiles' => [
+            'Deprecation-63735-DeprecateDataHandlerCheckValueMethods.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\DataHandling\DataHandler->checkValue_group_select' => [
+        'numberOfMandatoryArguments' => 6,
+        'maximumNumberOfArguments' => 6,
+        'restFiles' => [
+            'Deprecation-63735-DeprecateDataHandlerCheckValueMethods.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\DataHandling\DataHandler->checkValue_flex' => [
+        'numberOfMandatoryArguments' => 6,
+        'maximumNumberOfArguments' => 6,
+        'restFiles' => [
+            'Deprecation-63735-DeprecateDataHandlerCheckValueMethods.rst',
+        ],
+    ],
 ];
