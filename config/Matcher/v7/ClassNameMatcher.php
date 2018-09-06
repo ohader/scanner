@@ -86,6 +86,11 @@ return [
             'Breaking-66429-RemoveIdentityMapFromPersistence.rst',
         ],
     ],
+    'TYPO3\CMS\Rsaauth\Hook\LoginFormHook' => [
+        'restFiles' => [
+            'Breaking-66669-BackendLoginControllerRefactored.rst',
+        ],
+    ],
 
     // Removed interfaces
     'TYPO3\CMS\Extbase\Persistence\Generic\Qom\QueryObjectModelConstantsInterface' => [
