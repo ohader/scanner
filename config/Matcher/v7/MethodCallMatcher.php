@@ -905,4 +905,11 @@ return [
             'Deprecation-66823-ExtensionUtilityConfigureModule.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Controller\EditDocumentController->editRegularContentFromId' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Deprecation-66905-ClassicPageModuleAndEditRegularContentFromId',
+        ],
+    ],
 ];
