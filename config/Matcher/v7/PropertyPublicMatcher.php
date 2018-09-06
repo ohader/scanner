@@ -126,4 +126,9 @@ return [
             'Deprecation-65465-ReferenceIndexErrorLog.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Template\DocumentTemplate->parseTimeFlag' => [
+        'restFiles' => [
+            'Deprecation-66223-Backendparsetime.rst',
+        ],
+    ],
 ];
