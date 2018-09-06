@@ -51,6 +51,11 @@ return [
             'Breaking-62731-RTEWizardClassesRenamed.rst',
         ],
     ],
+    'TYPO3\CMS\Documentation\ViewHelpers\Link\Action' => [
+        'restFiles' => [
+            'Breaking-62859-RemovalDocumentationLinkActionViewHelper.rst',
+        ],
+    ],
 
     // Removed interfaces
     'TYPO3\CMS\Extbase\Persistence\Generic\Qom\QueryObjectModelConstantsInterface' => [
