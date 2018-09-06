@@ -56,6 +56,11 @@ return [
             'Breaking-62859-RemovalDocumentationLinkActionViewHelper.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Template\BigDocumentTemplate' => [
+        'restFiles' => [
+            'Breaking-75942-BigDocumentTemplateClassRemoved.rst',
+        ],
+    ],
 
     // Removed interfaces
     'TYPO3\CMS\Extbase\Persistence\Generic\Qom\QueryObjectModelConstantsInterface' => [
