@@ -101,4 +101,9 @@ return [
             'Breaking-63780-RemoveWordStringsFromReferenceIndex.rst',
         ],
     ],
+    'TYPO3\CMS\Core\DataHandling\DataHandler->include_filefunctions' => [
+        'restFiles' => [
+            'Deprecation-63324-DataHandler-IncludeFileFunctions.rst',
+        ],
+    ],
 ];
