@@ -71,6 +71,11 @@ return [
             'Deprecation-64068-ThumbnailView.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Tree\TableConfiguration\TableConfiguration\DatabaseTreeDataProvider' => [
+        'restFiles' => [
+            'Deprecation-65360-DatabaseTreeDataProviderOldClassNameInSignal.rst',
+        ],
+    ],
 
     // Removed interfaces
     'TYPO3\CMS\Extbase\Persistence\Generic\Qom\QueryObjectModelConstantsInterface' => [
