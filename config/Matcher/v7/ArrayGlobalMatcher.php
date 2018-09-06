@@ -75,4 +75,9 @@ return [
             'Breaking-64226-OptionAccessListRenderModeRemoved.rst',
         ],
     ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'GFX\'][\'enable_typo3temp_db_tracking\']' => [
+        'restFiles' => [
+            'Breaking-64643-RemoveEnableTypo3tempDbTracking.rst',
+        ],
+    ],
 ];
