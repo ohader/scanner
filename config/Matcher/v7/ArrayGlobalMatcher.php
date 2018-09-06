@@ -138,6 +138,7 @@ return [
     '$GLOBALS[\'TYPO3_CONF_VARS\'][\'GFX\'][\'png_to_gif\']' => [
         'restFiles' => [
             'Breaking-66906-AutomaticPNGToGIFConversionRemoved.rst',
+            'Deprecation-66906-FunctionalityPngToGifConversion.rst',
         ],
     ],
     '$GLOBALS[\'TYPO3_CONF_VARS\'][\'DB\'][\'extTablesDefinitionScript\']' => [
