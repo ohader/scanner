@@ -91,6 +91,11 @@ return [
             'Breaking-66669-BackendLoginControllerRefactored.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\User\ExtDirect\BackendUserSettingsDataProvider' => [
+        'restFiles' => [
+            'Breaking-66868-MoveUsageOfBackendUserSettingsDataProvider.rst',
+        ],
+    ],
 
     // Removed interfaces
     'TYPO3\CMS\Extbase\Persistence\Generic\Qom\QueryObjectModelConstantsInterface' => [
