@@ -140,4 +140,9 @@ return [
             'Breaking-66906-AutomaticPNGToGIFConversionRemoved.rst',
         ],
     ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'DB\'][\'extTablesDefinitionScript\']' => [
+        'restFiles' => [
+            'Deprecation-65344-ExtTables.rst',
+        ],
+    ],
 ];
