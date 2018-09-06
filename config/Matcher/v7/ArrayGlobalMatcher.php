@@ -65,4 +65,9 @@ return [
             'Breaking-24900-CompatVersion-Setting-Removed.rst',
         ],
     ],
+    '$GLOBALS[\'WEBMOUNTS\']' => [
+        'restFiles' => [
+            'Breaking-64070-GlobalWebmountsRemoved.rst',
+        ],
+    ],
 ];
