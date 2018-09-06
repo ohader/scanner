@@ -135,4 +135,9 @@ return [
             'Breaking-66669-BackendLoginControllerRefactored.rst',
         ],
     ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'GFX\'][\'png_to_gif\']' => [
+        'restFiles' => [
+            'Breaking-66906-AutomaticPNGToGIFConversionRemoved.rst',
+        ],
+    ],
 ];
