@@ -800,4 +800,11 @@ return [
             'Deprecation-65465-ReferenceIndexErrorLog.rst',
         ],
     ],
+    'TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController->checkFileInclude' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-65913-checkFileInclude.rst',
+        ],
+    ],
 ];
