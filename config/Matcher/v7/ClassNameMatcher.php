@@ -66,6 +66,11 @@ return [
             'Deprecation-47712-DeprecateOldLockingAPI.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\View\ThumbnailView' => [
+        'restFiles' => [
+            'Deprecation-64068-ThumbnailView.rst',
+        ],
+    ],
 
     // Removed interfaces
     'TYPO3\CMS\Extbase\Persistence\Generic\Qom\QueryObjectModelConstantsInterface' => [
