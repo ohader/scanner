@@ -204,11 +204,18 @@ return [
             'Deprecation-62864-HelpTextIcon.rst',
         ],
     ],
-    'TYPO3\CMS\Backend\Utility\BackendUtility->implodeTSParams' => [
+    'TYPO3\CMS\Backend\Utility\BackendUtility::implodeTSParams' => [
         'numberOfMandatoryArguments' => 1,
         'maximumNumberOfArguments' => 2,
         'restFiles' => [
             'Deprecation-46523-BackendUtilityImplodeTSParams.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Utility\BackendUtility::getThumbNail' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 4,
+        'restFiles' => [
+            'Deprecation-64068-ThumbnailView.rst',
         ],
     ],
 ];
