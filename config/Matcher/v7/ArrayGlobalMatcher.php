@@ -100,4 +100,9 @@ return [
             'Deprecation-64109-Hook-softRefParserGL.rst',
         ],
     ],
+    '$GLOBALS[\'MCONF\'][\'_\']' => [
+        'restFiles' => [
+            'Breaking-65432-ModuleUriInGlobalVarRemoved.rst',
+        ],
+    ],
 ];
