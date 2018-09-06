@@ -76,6 +76,11 @@ return [
             'Deprecation-65360-DatabaseTreeDataProviderOldClassNameInSignal.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\View\LogoView' => [
+        'restFiles' => [
+            'Deprecation-66065-BackendLogoViewDeprecated.rst',
+        ],
+    ],
 
     // Removed interfaces
     'TYPO3\CMS\Extbase\Persistence\Generic\Qom\QueryObjectModelConstantsInterface' => [
