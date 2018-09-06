@@ -91,4 +91,14 @@ return [
             'Deprecation-62363-TSFE-JSfuncCalls.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Database\ReferenceIndex->words' => [
+        'restFiles' => [
+            'Breaking-63780-RemoveWordStringsFromReferenceIndex.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Database\ReferenceIndex->word_strings' => [
+        'restFiles' => [
+            'Breaking-63780-RemoveWordStringsFromReferenceIndex.rst',
+        ],
+    ],
 ];
