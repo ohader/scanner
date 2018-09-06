@@ -70,4 +70,9 @@ return [
             'Breaking-64070-GlobalWebmountsRemoved.rst',
         ],
     ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'BE\'][\'accessListRenderMode\']' => [
+        'restFiles' => [
+            'Breaking-64226-OptionAccessListRenderModeRemoved.rst',
+        ],
+    ],
 ];
