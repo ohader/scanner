@@ -134,4 +134,46 @@ return [
             'Breaking-61863-ConnectDbFunctionRemoved.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Utility\GeneralUtility::array_merge_recursive_overrule' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 5,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\GeneralUtility::htmlspecialchars_decode' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getRequiredExtensionListArray' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\ExtensionManagementUtility::writeNewExtensionList' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\PhpOptionsUtility::isSqlSafeModeEnabled' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Core\ClassLoader::getAliasForClassName' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
 ];

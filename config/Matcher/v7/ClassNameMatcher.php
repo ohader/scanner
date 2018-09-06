@@ -26,4 +26,14 @@ return [
             'Breaking-61786-ExtbaseDeprecatedTypeHandlingServiceRemoved.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Resource\Service\IndexerService' => [
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Compatibility\GlobalObjectDeprecationDecorator' => [
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
 ];

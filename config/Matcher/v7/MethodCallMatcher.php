@@ -43,4 +43,200 @@ return [
             'Breaking-62038-RemovedDocumentTemplateOptions.rst',
         ],
     ],
+    'TYPO3\CMS\Core\DataHandling\DataHandler->clear_cache' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\DataHandling\DataHandler->internal_clearPageCache' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Category\CategoryRegistry->get' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Category\CategoryRegistry->applyTca' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Resource\FileRepository->findByUid' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Resource\FileRepository->addToIndex' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Resource\FileRepository->getFileIndexRecordsForFolder' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Resource\FileRepository->getFileIndexRecord' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Resource\FileRepository->findBySha1Hash' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Resource\FileRepository->update' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Resource\ResourceStorage->getFolderByIdentifier' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Resource\ResourceStorage->getFileByIdentifier' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Resource\ResourceStorage->getFileList' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 6,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Resource\ResourceStorage->getFolderList' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 4,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Resource\ResourceStorage->fetchFolderListFromDriver' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 5,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\File\BasicFileUtility->getTotalFileInfo' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\File\BasicFileUtility->checkFileNameLen' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\File\BasicFileUtility->isPathValid' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\File\BasicFileUtility->blindPath' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\File\BasicFileUtility->findTempFolder' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\File\BasicFileUtility->rmDoubleSlash' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\File\BasicFileUtility->cleanDirectoryName' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\File\ExtendedFileUtility->init_actionPerms' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\File\ExtendedFileUtility->printLogErrorMessages' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\File\ExtendedFileUtility->findRecycler' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Html\RteHtmlParser->rteImageStorageDir' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Localization\Locales->getTerLocales' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Localization\Locales->getTerLocaleDependencies' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
 ];

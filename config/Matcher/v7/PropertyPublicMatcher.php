@@ -66,4 +66,9 @@ return [
             'Breaking-62039-RemovedTBE_StylesMainColors.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Authentication\AbstractUserAuthentication->cookieId' => [
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
 ];
