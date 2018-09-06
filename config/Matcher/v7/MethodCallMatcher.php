@@ -919,4 +919,18 @@ return [
             'Deprecation-67171-T3editorIsEnabled.rst',
         ],
     ],
+    'TYPO3\CMS\Dbal\Database\DatabaseConnection->MySQLActualType' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-67297-DbalFieldTypeConversion.rst',
+        ],
+    ],
+    'TYPO3\CMS\Dbal\Database\DatabaseConnection->MySQLMetaType' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-67297-DbalFieldTypeConversion.rst',
+        ],
+    ],
 ];
