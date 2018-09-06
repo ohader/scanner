@@ -41,6 +41,16 @@ return [
             'Breaking-62670-DeprecatedCodeRemovalInMultipleSysexts.rst',
         ],
     ],
+    'TYPO3\CMS\Rtehtmlarea\ContentParser' => [
+        'restFiles' => [
+            'Breaking-62731-RTEWizardClassesRenamed.rst',
+        ],
+    ],
+    'TYPO3\CMS\Rtehtmlarea\User' => [
+        'restFiles' => [
+            'Breaking-62731-RTEWizardClassesRenamed.rst',
+        ],
+    ],
 
     // Removed interfaces
     'TYPO3\CMS\Extbase\Persistence\Generic\Qom\QueryObjectModelConstantsInterface' => [
