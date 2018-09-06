@@ -898,4 +898,11 @@ return [
             'Deprecation-63735-DeprecateDataHandlerCheckValueMethods.rst',
         ],
     ],
+    'TYPO3\CMS\Extbase\Utility\ExtensionUtility->configureModule' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Deprecation-66823-ExtensionUtilityConfigureModule.rst',
+        ],
+    ],
 ];
