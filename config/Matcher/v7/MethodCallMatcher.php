@@ -807,4 +807,18 @@ return [
             'Deprecation-65913-checkFileInclude.rst',
         ],
     ],
+    'TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController->prefixLocalAnchorsWithScript' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Deprecation-65934-PrefixLocalAnchorsMovedToLegacyExtension.rst',
+        ],
+    ],
+    'TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController->doLocalAnchorFix' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Deprecation-65934-PrefixLocalAnchorsMovedToLegacyExtension.rst',
+        ],
+    ],
 ];
