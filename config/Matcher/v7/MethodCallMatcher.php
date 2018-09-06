@@ -779,11 +779,18 @@ return [
             'Deprecation-47712-DeprecateOldLockingAPI.rst',
         ],
     ],
-    '\TYPO3\CMS\Backend\Tree\View\PagePositionMap->JSimgFunc' => [
+    'TYPO3\CMS\Backend\Tree\View\PagePositionMap->JSimgFunc' => [
         'numberOfMandatoryArguments' => 0,
         'maximumNumberOfArguments' => 1,
         'restFiles' => [
             'Deprecation-64598-DeprecatePagepositionmapjsimgfunc.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Template\DocumentTemplate::getDynTabMenu' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 8,
+        'restFiles' => [
+            'Deprecation-65111-getDynTabMenu.rst',
         ],
     ],
 ];
