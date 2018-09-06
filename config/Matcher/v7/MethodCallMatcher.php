@@ -849,4 +849,11 @@ return [
             'Breaking-67402-ExtbaseAbstractDomainObjectInitializeObject.rst',
         ],
     ],
+    'TYPO3\CMS\Extbase\DomainObject\AbstractDomainObject->__wakeup' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-67402-ExtbaseAbstractDomainObjectWakeUp.rst',
+        ],
+    ],
 ];
