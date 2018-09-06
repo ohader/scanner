@@ -45,4 +45,14 @@ return [
             'Breaking-62039-RemovedTBE_StylesMainColors.rst',
         ],
     ],
+    '$GLOBALS[\'typo3CacheManager\']' => [
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
+    '$GLOBALS[\'typo3CacheFactory\']' => [
+        'restFiles' => [
+            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
+        ],
+    ],
 ];
