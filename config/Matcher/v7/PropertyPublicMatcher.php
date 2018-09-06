@@ -76,4 +76,14 @@ return [
             'Breaking-62670-DeprecatedCodeRemovalInMultipleSysexts.rst',
         ],
     ],
+    'TYPO3\CMS\Extbase\Mvc\Controller\ActionController->viewObjectNamePattern' => [
+        'restFiles' => [
+            'Breaking-62673-ExtbaseDeprecatedCodeRemoved.rst',
+        ],
+    ],
+    'TYPO3\CMS\Extbase\Persistence\Repository->backend' => [
+        'restFiles' => [
+            'Breaking-62673-ExtbaseDeprecatedCodeRemoved.rst',
+        ],
+    ],
 ];
