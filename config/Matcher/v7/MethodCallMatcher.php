@@ -854,6 +854,7 @@ return [
         'maximumNumberOfArguments' => 0,
         'restFiles' => [
             'Breaking-67402-ExtbaseAbstractDomainObjectWakeUp.rst',
+            'Deprecation-67402-ExtbaseAbstractDomainObjectWakeUp.rst'
         ],
     ],
     'TYPO3\CMS\Core\DataHandling\DataHandler->checkValue_text' => [
