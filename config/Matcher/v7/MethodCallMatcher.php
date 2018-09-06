@@ -463,4 +463,11 @@ return [
             'Deprecation-46770-LocalImageProcessorGraphicalFunctions.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Controller\LoginController->makeLoginBoxImage' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Deprecation-60559-MakeLoginBoxImage.rst',
+        ],
+    ],
 ];
