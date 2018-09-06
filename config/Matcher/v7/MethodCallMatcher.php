@@ -456,4 +456,11 @@ return [
             'Breaking-64668-MailformMovedToLegacyExtension.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Resource\Processing\LocalImageProcessor->getTemporaryImageWithText' => [
+        'numberOfMandatoryArguments' => 4,
+        'maximumNumberOfArguments' => 4,
+        'restFiles' => [
+            'Deprecation-46770-LocalImageProcessorGraphicalFunctions.rst',
+        ],
+    ],
 ];
