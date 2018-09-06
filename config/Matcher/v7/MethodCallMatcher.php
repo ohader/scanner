@@ -765,4 +765,18 @@ return [
             'Breaking-65962-WebSVGLibraryAndAPIRemoved.rst',
         ],
     ],
+    'TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController->acquirePageGenerationLock' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Deprecation-47712-DeprecateOldLockingAPI.rst',
+        ],
+    ],
+    'TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController->releasePageGenerationLock' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-47712-DeprecateOldLockingAPI.rst',
+        ],
+    ],
 ];

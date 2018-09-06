@@ -61,6 +61,11 @@ return [
             'Breaking-75942-BigDocumentTemplateClassRemoved.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Locking\Locker' => [
+        'restFiles' => [
+            'Deprecation-47712-DeprecateOldLockingAPI.rst',
+        ],
+    ],
 
     // Removed interfaces
     'TYPO3\CMS\Extbase\Persistence\Generic\Qom\QueryObjectModelConstantsInterface' => [

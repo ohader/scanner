@@ -115,4 +115,9 @@ return [
             'Breaking-66431-NewLoginScreen.rst',
         ],
     ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'SYS\'][\'lockingMode\']' => [
+        'restFiles' => [
+            'Deprecation-47712-DeprecateOldLockingAPI.rst',
+        ],
+    ],
 ];
