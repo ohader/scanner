@@ -96,6 +96,16 @@ return [
             'Breaking-66868-MoveUsageOfBackendUserSettingsDataProvider.rst',
         ],
     ],
+    'TYPO3\CMS\T3editor\FormWizard' => [
+        'restFiles' => [
+            'Breaking-67229-FormEngineRelatedClasses.rst',
+        ],
+    ],
+    'TYPO3\CMS\Rtehtmlarea\Controller\FrontendRteController' => [
+        'restFiles' => [
+            'Breaking-67229-FormEngineRelatedClasses.rst',
+        ],
+    ],
 
     // Removed interfaces
     'TYPO3\CMS\Extbase\Persistence\Generic\Qom\QueryObjectModelConstantsInterface' => [
