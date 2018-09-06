@@ -125,4 +125,14 @@ return [
             'Deprecation-66431-NewLoginScreen.rst',
         ],
     ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'SC_OPTIONS\'][\'typo3/index.php\'][\'loginScriptHook\']' => [
+        'restFiles' => [
+            'Breaking-66669-BackendLoginControllerRefactored.rst',
+        ],
+    ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'SC_OPTIONS\'][\'typo3/index.php\'][\'loginFormHook\']' => [
+        'restFiles' => [
+            'Breaking-66669-BackendLoginControllerRefactored.rst',
+        ],
+    ],
 ];
