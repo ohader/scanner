@@ -110,4 +110,9 @@ return [
             'Breaking-66034-DropContentAdapter.rst',
         ],
     ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'BE\'][\'loginNewsTitle\']' => [
+        'restFiles' => [
+            'Breaking-66431-NewLoginScreen.rst',
+        ],
+    ],
 ];
