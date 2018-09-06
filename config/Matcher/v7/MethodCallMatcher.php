@@ -393,4 +393,11 @@ return [
             'Deprecation-62795-DocumentTemplateJavaScript.rst',
         ],
     ],
+    'TYPO3\CMS\Frontend\Plugin\AbstractPlugin->pi_list_searchBox' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-62854-Deprecate-pi_list_searchBox.rst',
+        ],
+    ],
 ];
