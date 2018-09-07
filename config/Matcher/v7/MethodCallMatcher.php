@@ -1315,4 +1315,11 @@ return [
             'Deprecation-71249-DeprecateRenderMethodOfFlashMessageClass.rst',
         ],
     ],
+    'TYPO3\CMS\IndexedSearch\Controller\SearchFormController->pi_list_browseresults' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 4,
+        'restFiles' => [
+            'Breaking-72931-SearchFormControllerpi_list_browseresultsHasBeenRenamed.rst',
+        ],
+    ],
 ];
