@@ -984,4 +984,11 @@ return [
             'Breaking-67646-LibraryInclusionInFrontend.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Controller\EditDocumentController->functionMenus' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-67753-DropSecondaryOptions.rst',
+        ],
+    ],
 ];

@@ -142,4 +142,9 @@ return [
             'Breaking-67749-ForceAutoloadingForVariousHooks.rst',
         ],
     ],
+    '$GLOBALS[\'TCA\'][\'aTable\'][\'ctrl\'][\'canNotCollapse\']' => [
+        'restFiles' => [
+            'Breaking-67753-DropSecondaryOptions.rst',
+        ],
+    ],
 ];

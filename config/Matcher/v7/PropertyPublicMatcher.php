@@ -116,7 +116,7 @@ return [
             'Deprecation-65343-BackendUserOsProperty.rst',
         ],
     ],
-    'TYPO3\CMS\Core\DataHandling\DataHandler->$stripslashes_values' => [
+    'TYPO3\CMS\Core\DataHandling\DataHandler->stripslashes_values' => [
         'restFiles' => [
             'Deprecation-65381-DataHandlerStripslashesValuesProperty.rst',
         ],
@@ -129,6 +129,21 @@ return [
     'TYPO3\CMS\Backend\Template\DocumentTemplate->parseTimeFlag' => [
         'restFiles' => [
             'Deprecation-66223-Backendparsetime.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Controller\EditDocumentController->MOD_MENU' => [
+        'restFiles' => [
+            'Breaking-67753-DropSecondaryOptions.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Controller\EditDocumentController->MOD_SETTINGS' => [
+        'restFiles' => [
+            'Breaking-67753-DropSecondaryOptions.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Form\FormEngine->palettesCollapsed' => [
+        'restFiles' => [
+            'Breaking-67753-DropSecondaryOptions.rst',
         ],
     ],
 ];
