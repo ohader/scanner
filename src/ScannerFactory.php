@@ -1,15 +1,9 @@
 <?php
 namespace TYPO3\CMS\Scanner;
 
-use PhpParser\NodeTraverser;
-use PhpParser\NodeVisitor\NameResolver;
-use PhpParser\Parser;
 use PhpParser\ParserFactory;
 use Symfony\Component\Finder\Finder;
-use TYPO3\CMS\Scanner\Domain\Model\MatcherBundle;
 use TYPO3\CMS\Scanner\Matcher\MatcherFactory;
-use TYPO3\CMS\Scanner\Visitor\CodeStatistics;
-use TYPO3\CMS\Scanner\Visitor\GeneratorClassesResolver;
 use TYPO3\CMS\Scanner\Visitor\TraverserFactory;
 
 class ScannerFactory
