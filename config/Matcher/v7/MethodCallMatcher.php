@@ -1257,4 +1257,11 @@ return [
             'Deprecation-68804-CLI-relatedConstantsAndMethods.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Database\RelationHandler->convertPosNeg' => [
+        'numberOfMandatoryArguments' => 3,
+        'maximumNumberOfArguments' => 3,
+        'restFiles' => [
+            'Deprecation-69028-RelationHandlerConvertPosNeg.rst',
+        ],
+    ],
 ];
