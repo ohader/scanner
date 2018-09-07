@@ -217,4 +217,9 @@ return [
             'Breaking-69930-RemoveOptionServerTimeZone.rst',
         ],
     ],
+    '$something[\'iconsInOptionTags\']' => [
+        'restFiles' => [
+            'Deprecation-69736-SelectOptionIconsInOptionTagsRemoved.rst',
+        ],
+    ],
 ];
