@@ -237,4 +237,9 @@ return [
             'Deprecation-70138-FlexFormLanguageHandling.rst',
         ],
     ],
+    '$something[\'dynamicConfigFile\']' => [
+        'restFiles' => [
+            'Deprecation-70514-DynamicConfigFile.rst',
+        ],
+    ],
 ];
