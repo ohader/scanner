@@ -1,6 +1,11 @@
 <?php
 return [
     // Removed classes
+    'TYPO3\CMS\Impexp\ImportExport' => [
+        'restFiles' => [
+            '8.0/Breaking-45899-SplitClassImportExportIntoClassesImportAndExport.rst',
+        ],
+    ],
     'TYPO3\CMS\Fluid\ViewHelpers\AliasViewHelper' => [
         'restFiles' => [
             '8.0/Breaking-69863-ChangesInViewHelpersPostFluidStandalone.rst',
