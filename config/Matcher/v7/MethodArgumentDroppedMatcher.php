@@ -33,4 +33,10 @@ return [
             'Deprecation-66904-DisablegetExtURL.rst',
         ],
     ],
+    'TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer->getMailTo' => [
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Breaking-52156-ReplaceJumpUrlWithHooks.rst',
+        ],
+    ],
 ];
