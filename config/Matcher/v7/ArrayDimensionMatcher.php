@@ -147,4 +147,9 @@ return [
             'Breaking-67753-DropSecondaryOptions.rst',
         ],
     ],
+    '$something[\'dividers2tabs\']' => [
+        'restFiles' => [
+            'Breaking-62833-Dividers2Tabs.rst',
+        ],
+    ],
 ];
