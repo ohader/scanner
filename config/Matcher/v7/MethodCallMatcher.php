@@ -1243,4 +1243,11 @@ return [
             'Breaking-69315-ElementBrowsermain_Protected.rst',
         ],
     ],
+    'TYPO3\CMS\Fluid\ViewHelpers\Form\AbstractFormFieldViewHelper->getValue' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-66588-POSTDataInSelectviewhelperShouldHaveHigherPriorityThanValueValue.rst',
+        ],
+    ],
 ];
