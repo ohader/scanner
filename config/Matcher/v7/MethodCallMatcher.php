@@ -1136,6 +1136,7 @@ return [
         'maximumNumberOfArguments' => 2,
         'restFiles' => [
             'Deprecation-67932-DeprecatedOldRsaauthApi.rst',
+            'Breaking-69916-RemovedBackendLogingetRsaPublicKeyAJAXHandler.rst',
         ],
     ],
     'TYPO3\CMS\Backend\Controller\BackendController->getPageRenderer' => [
