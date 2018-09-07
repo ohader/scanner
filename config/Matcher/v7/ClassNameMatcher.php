@@ -196,6 +196,21 @@ return [
             'Breaking-72117-APIChangeInExceptionHandlerInterface.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Sprite\AbstractSpriteHandler' => [
+        'restFiles' => [
+            'Deprecation-70477-DeprecateSpriteIconClasses.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Sprite\SimpleSpriteHandler' => [
+        'restFiles' => [
+            'Deprecation-70477-DeprecateSpriteIconClasses.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Sprite\SpriteBuildingHandler' => [
+        'restFiles' => [
+            'Deprecation-70477-DeprecateSpriteIconClasses.rst',
+        ],
+    ],
 
     // Removed interfaces
     'TYPO3\CMS\Extbase\Persistence\Generic\Qom\QueryObjectModelConstantsInterface' => [
