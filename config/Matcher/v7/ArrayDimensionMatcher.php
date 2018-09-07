@@ -227,4 +227,9 @@ return [
             'Breaking-69916-HookAjaxSaveCodeOfT3editorChanged.rst',
         ],
     ],
+    '$TYPO3_CONF_VARS[\'BE\'][\'maxFileSize\']' => [
+        'restFiles' => [
+            'Breaking-71110-TYPO3-specificUploadLimitRemoved.rst',
+        ],
+    ],
 ];
