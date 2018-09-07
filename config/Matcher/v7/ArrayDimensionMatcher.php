@@ -162,4 +162,9 @@ return [
             'Breaking-67811-RteApi.rst',
         ],
     ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'SYS][\'form_enctype\']' => [
+        'restFiles' => [
+            'Breaking-68178-DropFormEnctype.rst',
+        ],
+    ],
 ];
