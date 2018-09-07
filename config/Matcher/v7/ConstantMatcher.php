@@ -26,4 +26,9 @@ return [
             'Breaking-67987-RemovedEntryScriptHandling.rst',
         ],
     ],
+    'TYPO3_URL_ORG' => [
+        'restFiles' => [
+            'Breaking-68814-RemoveOfBaseConstantTYPO3_URL_ORG.rst',
+        ],
+    ],
 ];
