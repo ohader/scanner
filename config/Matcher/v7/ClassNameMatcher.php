@@ -173,4 +173,9 @@ return [
             'Breaking-67890-RedesignFluidTemplateDataProcessorInterfaceToDataProcessorInterface.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Utility\IconUtilityOverrideResourceIconHookInterface' => [
+        'restFiles' => [
+            'Deprecation-69057-DeprecateIconUtilityAndMoveMethodsIntoIconFactory.rst',
+        ],
+    ],
 ];

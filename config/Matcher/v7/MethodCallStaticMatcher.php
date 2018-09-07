@@ -265,6 +265,7 @@ return [
         'maximumNumberOfArguments' => 3,
         'restFiles' => [
             'Deprecation-67506-DeprecateIconUtilitygetIcon.rst',
+            'Deprecation-69057-DeprecateIconUtilityAndMoveMethodsIntoIconFactory.rst',
         ],
     ],
     'TYPO3\CMS\Core\Utility\GeneralUtility::modifyHTMLColor' => [
@@ -349,6 +350,48 @@ return [
         'maximumNumberOfArguments' => 2,
         'restFiles' => [
             'Deprecation-68128-GeneralUtilitySlash-relatedMethods.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Utility\IconUtility::skinImg' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 4,
+        'restFiles' => [
+            'Deprecation-69057-DeprecateIconUtilityAndMoveMethodsIntoIconFactory.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Utility\IconUtility::getSpriteIcon' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 3,
+        'restFiles' => [
+            'Deprecation-69057-DeprecateIconUtilityAndMoveMethodsIntoIconFactory.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Utility\IconUtility::getSpriteIconForFile' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Deprecation-69057-DeprecateIconUtilityAndMoveMethodsIntoIconFactory.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Utility\IconUtility::getSpriteIconForRecord' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 3,
+        'restFiles' => [
+            'Deprecation-69057-DeprecateIconUtilityAndMoveMethodsIntoIconFactory.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Utility\IconUtility::getSpriteIconForResource' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 3,
+        'restFiles' => [
+            'Deprecation-69057-DeprecateIconUtilityAndMoveMethodsIntoIconFactory.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Utility\IconUtility::getSpriteIconClasses' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-69057-DeprecateIconUtilityAndMoveMethodsIntoIconFactory.rst',
         ],
     ],
 ];
