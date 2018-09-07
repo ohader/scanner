@@ -1124,4 +1124,11 @@ return [
             'Deprecation-67769-DeprecateQueryGeneratorformatQ.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Database\QueryGenerator->JSbottom' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-67790-DeprecateQueryGeneratorJSbottom.rst',
+        ],
+    ],
 ];
