@@ -239,4 +239,11 @@ return [
             'Breaking-67654-RemoveGLOBALSFILEICONSFunctionality.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Utility\BackendUtility::RTEgetObj' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-67811-RteApi.rst',
+        ],
+    ],
 ];
