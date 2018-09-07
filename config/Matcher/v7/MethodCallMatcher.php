@@ -841,6 +841,7 @@ return [
         'maximumNumberOfArguments' => 2,
         'restFiles' => [
             'Breaking-66707-IssueCommandNowAddsQuotesWhenUsedInJSContext.rst',
+            'Deprecation-65728-DocumentTemplate-issueCommand.rst',
         ],
     ],
     'TYPO3\CMS\Extbase\DomainObject\AbstractDomainObject->initializeObject' => [
