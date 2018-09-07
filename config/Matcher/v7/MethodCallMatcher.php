@@ -1054,4 +1054,39 @@ return [
             'Breaking-68020-DroppedDisableBigButtons.rst',
         ],
     ],
+    'TYPO3\CMS\Frontend\Controller\ExtDirectEidController->routeAction' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-68186-AdjustedAndRemovedMethodsInEIDArea.rst',
+        ],
+    ],
+    'TYPO3\CMS\Frontend\Controller\ExtDirectEidController->actionIsAllowed' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-68186-AdjustedAndRemovedMethodsInEIDArea.rst',
+        ],
+    ],
+    'TYPO3\CMS\Frontend\Controller\ExtDirectEidController->render' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-68186-AdjustedAndRemovedMethodsInEIDArea.rst',
+        ],
+    ],
+    'TYPO3\CMS\Frontend\Utility\EidUtility->isEidRequest' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-68186-AdjustedAndRemovedMethodsInEIDArea.rst',
+        ],
+    ],
+    'TYPO3\CMS\Frontend\Utility\EidUtility->getEidScriptPath' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-68186-AdjustedAndRemovedMethodsInEIDArea.rst',
+        ],
+    ],
 ];
