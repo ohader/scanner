@@ -156,6 +156,26 @@ return [
             'Deprecation-69535-DeprecateTYPO3CMSFluidViewHelpersBeButtonsIconViewHelper.rstDeprecation-69535-DeprecateTYPO3CMSFluidViewHelpersBeButtonsIconViewHelper.rst',
         ],
     ],
+    'TYPO3\CMS\Recordlist\Browser\ElementBrowser' => [
+        'restFiles' => [
+            'Breaking-66369-RemovedElementBrowserRelatedClasses.rst',
+        ],
+    ],
+    'TYPO3\CMS\Rtehtmlarea\BrowseLinks' => [
+        'restFiles' => [
+            'Breaking-66369-RemovedElementBrowserRelatedClasses.rst',
+        ],
+    ],
+    'TYPO3\CMS\Rtehtmlarea\FolderTree' => [
+        'restFiles' => [
+            'Breaking-66369-RemovedElementBrowserRelatedClasses.rst',
+        ],
+    ],
+    'TYPO3\CMS\Rtehtmlarea\PageTree' => [
+        'restFiles' => [
+            'Breaking-66369-RemovedElementBrowserRelatedClasses.rst',
+        ],
+    ],
 
     // Removed interfaces
     'TYPO3\CMS\Extbase\Persistence\Generic\Qom\QueryObjectModelConstantsInterface' => [
@@ -181,6 +201,11 @@ return [
     'TYPO3\CMS\Backend\Utility\IconUtilityOverrideResourceIconHookInterface' => [
         'restFiles' => [
             'Deprecation-69057-DeprecateIconUtilityAndMoveMethodsIntoIconFactory.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\ElementBrowser\ElementBrowserHookInterface' => [
+        'restFiles' => [
+            'Breaking-66369-RemovedElementBrowserRelatedClasses.rst',
         ],
     ],
 ];
