@@ -1250,4 +1250,11 @@ return [
             'Deprecation-66588-POSTDataInSelectviewhelperShouldHaveHigherPriorityThanValueValue.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Authentication\BackendUserAuthentication->checkCLIuser' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Deprecation-68804-CLI-relatedConstantsAndMethods.rst',
+        ],
+    ],
 ];

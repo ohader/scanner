@@ -31,4 +31,14 @@ return [
             'Breaking-68150-GLOBALSCLIENT.rst',
         ],
     ],
+    '$GLOBALS[\'temp_cliScriptPath\']' => [
+        'restFiles' => [
+            'Deprecation-68804-CLI-relatedConstantsAndMethods.rst',
+        ],
+    ],
+    '$GLOBALS[\'temp_cliKey\']' => [
+        'restFiles' => [
+            'Deprecation-68804-CLI-relatedConstantsAndMethods.rst',
+        ],
+    ],
 ];
