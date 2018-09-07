@@ -161,4 +161,9 @@ return [
             'Breaking-69276-ElementBrowserControllerbrowserRemoved.rst',
         ],
     ],
+    'TYPO3\CMS\Recordlist\Controller\ElementBrowserController->content' => [
+        'restFiles' => [
+            'Breaking-69315-ElementBrowsermain_Protected.rst',
+        ],
+    ],
 ];

@@ -1208,4 +1208,39 @@ return [
             'Breaking-68571-RemoveElementBrowser-getMsgBox.rst',
         ],
     ],
+    'TYPO3\CMS\Recordlist\Browser\ElementBrowser->main_db' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-69315-ElementBrowsermain_Protected.rst',
+        ],
+    ],
+    'TYPO3\CMS\Recordlist\Browser\ElementBrowser->main_file' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-69315-ElementBrowsermain_Protected.rst',
+        ],
+    ],
+    'TYPO3\CMS\Recordlist\Browser\ElementBrowser->main_folder' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-69315-ElementBrowsermain_Protected.rst',
+        ],
+    ],
+    'TYPO3\CMS\Recordlist\Browser\ElementBrowser->main_rte' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-69315-ElementBrowsermain_Protected.rst',
+        ],
+    ],
+    'TYPO3\CMS\Recordlist\Controller\ElementBrowserController->printContent' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-69315-ElementBrowsermain_Protected.rst',
+        ],
+    ],
 ];
