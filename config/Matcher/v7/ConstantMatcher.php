@@ -16,4 +16,14 @@ return [
             'Deprecation-65344-ExtTables.rst',
         ],
     ],
+    'TYPO3_MOD_PATH' => [
+        'restFiles' => [
+            'Breaking-67987-RemovedEntryScriptHandling.rst',
+        ],
+    ],
+    'PATH_typo3_mod' => [
+        'restFiles' => [
+            'Breaking-67987-RemovedEntryScriptHandling.rst',
+        ],
+    ],
 ];
