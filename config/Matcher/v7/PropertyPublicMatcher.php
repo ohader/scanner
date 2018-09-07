@@ -171,4 +171,9 @@ return [
             'Deprecation-69078-TemplateService-tempPath.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\ContextMenu\ContextMenuAction->class' => [
+        'restFiles' => [
+            'Deprecation-69561-ReplaceSpriteIconsWithIconFactoryInContextMenu.rst',
+        ],
+    ],
 ];
