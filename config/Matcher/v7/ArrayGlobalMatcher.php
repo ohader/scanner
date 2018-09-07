@@ -26,4 +26,9 @@ return [
             'Breaking-67654-RemoveGLOBALSFILEICONSFunctionality.rst',
         ],
     ],
+    '$GLOBALS[\'CLIENT\']' => [
+        'restFiles' => [
+            'Breaking-68150-GLOBALSCLIENT.rst',
+        ],
+    ],
 ];
