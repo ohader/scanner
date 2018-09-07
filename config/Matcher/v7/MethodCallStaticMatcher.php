@@ -443,4 +443,11 @@ return [
             'Deprecation-69269-DeprecateBackendUtilitygetPathType_web_nonweb.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Utility\BackendUtility::getUrlToken' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Deprecation-69562-DeprecateHelperMethodsForRedundantCSRFProtection.rst',
+        ],
+    ],
 ];
