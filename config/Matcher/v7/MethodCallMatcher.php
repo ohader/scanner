@@ -956,4 +956,25 @@ return [
             'Breaking-66602-RemoveRefererCheckWhileHandlingJumpUrl.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Template\DocumentTemplate->formWidthText' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 3,
+        'restFiles' => [
+            'Breaking-67565-DeprecatedBackendRelatedMethodsRemoved.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\View\PageLayoutView->getBackendLayoutConfiguration' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-67565-DeprecatedBackendRelatedMethodsRemoved.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\View\PageLayoutView->wordWrapper' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 3,
+        'restFiles' => [
+            'Breaking-67565-DeprecatedBackendRelatedMethodsRemoved.rst',
+        ],
+    ],
 ];
