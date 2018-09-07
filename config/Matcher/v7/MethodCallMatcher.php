@@ -1294,4 +1294,11 @@ return [
             'Deprecation-70138-FlexFormLanguageHandling.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Template\DocumentTemplate->wrapClickMenuOnIcon' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 7,
+        'restFiles' => [
+            'Deprecation-70494-WrapClickMenuOnIcon.rst',
+        ],
+    ],
 ];
