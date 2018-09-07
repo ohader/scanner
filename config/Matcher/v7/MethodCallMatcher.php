@@ -1280,4 +1280,11 @@ return [
             'Deprecation-60712-GetDynamicTabMenu.rst',
         ],
     ],
+    'TYPO3\CMS\Filelist\FileList->getButtonsAndOtherMarkers' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-69877-UseModuleTemplateAPIForExtfilelist.rst',
+        ],
+    ],
 ];
