@@ -436,4 +436,11 @@ return [
             'Deprecation-69262-MoveMarkerSubstitutionFunctionalityToOwnClass.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Utility\BackendUtility::getPathType_web_nonweb' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-69269-DeprecateBackendUtilitygetPathType_web_nonweb.rst',
+        ],
+    ],
 ];
