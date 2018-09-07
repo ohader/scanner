@@ -146,6 +146,11 @@ return [
             'Breaking-69568-FormEngine.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\ModuleSettings' => [
+        'restFiles' => [
+            'Deprecation-68760-ModuleSettings.rst',
+        ],
+    ],
 
     // Removed interfaces
     'TYPO3\CMS\Extbase\Persistence\Generic\Qom\QueryObjectModelConstantsInterface' => [
