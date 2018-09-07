@@ -191,6 +191,11 @@ return [
             'Breaking-70574-FormWizardSaveHandlingChanged.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Error\ExceptionHandlerInterface' => [
+        'restFiles' => [
+            'Breaking-72117-APIChangeInExceptionHandlerInterface.rst',
+        ],
+    ],
 
     // Removed interfaces
     'TYPO3\CMS\Extbase\Persistence\Generic\Qom\QueryObjectModelConstantsInterface' => [
