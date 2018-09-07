@@ -212,4 +212,9 @@ return [
             'Breaking-69904-RemoveSettingDiff_pathFromDefaultConfiguration.rst',
         ],
     ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'SYS\'][\'serverTimeZone\']' => [
+        'restFiles' => [
+            'Breaking-69930-RemoveOptionServerTimeZone.rst',
+        ],
+    ],
 ];
