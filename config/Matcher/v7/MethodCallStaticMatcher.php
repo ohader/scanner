@@ -394,4 +394,46 @@ return [
             'Deprecation-69057-DeprecateIconUtilityAndMoveMethodsIntoIconFactory.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Html\HtmlParser::getSubpart' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Deprecation-69262-MoveMarkerSubstitutionFunctionalityToOwnClass.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Html\HtmlParser::substituteSubpart' => [
+        'numberOfMandatoryArguments' => 3,
+        'maximumNumberOfArguments' => 5,
+        'restFiles' => [
+            'Deprecation-69262-MoveMarkerSubstitutionFunctionalityToOwnClass.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Html\HtmlParser::substituteSubpartArray' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Deprecation-69262-MoveMarkerSubstitutionFunctionalityToOwnClass.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Html\HtmlParser::substituteMarker' => [
+        'numberOfMandatoryArguments' => 3,
+        'maximumNumberOfArguments' => 3,
+        'restFiles' => [
+            'Deprecation-69262-MoveMarkerSubstitutionFunctionalityToOwnClass.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Html\HtmlParser::substituteMarkerArray' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 5,
+        'restFiles' => [
+            'Deprecation-69262-MoveMarkerSubstitutionFunctionalityToOwnClass.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Html\HtmlParser::substituteMarkerAndSubpartArrayRecursive' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 5,
+        'restFiles' => [
+            'Deprecation-69262-MoveMarkerSubstitutionFunctionalityToOwnClass.rst',
+        ],
+    ],
 ];
