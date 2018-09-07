@@ -1005,4 +1005,32 @@ return [
             'Breaking-67811-RteApi.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Page\PageRenderer->loadExtCore' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-68001-RemovedExtJSCoreAndExtJSAdapters.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Page\PageRenderer->enableExtCoreDebug' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-68001-RemovedExtJSCoreAndExtJSAdapters.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Page\PageRenderer->getExtCorePath' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-68001-RemovedExtJSCoreAndExtJSAdapters.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Page\PageRenderer->setExtCorePath' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-68001-RemovedExtJSCoreAndExtJSAdapters.rst',
+        ],
+    ],
 ];
