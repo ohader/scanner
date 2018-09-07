@@ -21,4 +21,9 @@ return [
             'Breaking-64070-GlobalWebmountsRemoved.rst',
         ],
     ],
+    '$GLOBALS[\'FILEICONS\']' => [
+        'restFiles' => [
+            'Breaking-67654-RemoveGLOBALSFILEICONSFunctionality.rst',
+        ],
+    ],
 ];
