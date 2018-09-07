@@ -25,8 +25,13 @@ class ArrayDimensionMatcherFixture
         // Match
         $foo['maxSessionDataSize'];
         $foo['bar']['maxSessionDataSize'];
+        $GLOBALS['TBE_MODULES_EXT']['xMOD_alt_clickmenu']['extendCMclasses']['path'];
+        $GLOBALS['TBE_STYLES']['styleschemes'];
 
         // No match
+        $GLOBALS['TBE_MODULES_EXT']['xMOD_alt_clickmenu']['some_other_key']['path'];
+        $GLOBALS['foo']['styleschemes'];
+        $GLOBALS['styleschemes'];
         $foo['foo'];
         $foo[$maxSessionDataSize];
         $foo->maxSessionDataSize;

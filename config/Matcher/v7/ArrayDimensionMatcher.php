@@ -12,6 +12,7 @@ return [
         ],
     ],
     '$GLOBALS[\'TBE_MODULES_EXT\'][\'xMOD_alt_clickmenu\'][\'extendCMclasses\'][\'path\']' => [
+        'numberOfKeysToMatch' => 3,
         'restFiles' => [
             'Breaking-61781-IncludeOnceArrayOfClickMenuControllerRemoved.rst',
         ],
@@ -27,6 +28,7 @@ return [
         ],
     ],
     '$GLOBALS[\'TBE_STYLES\'][\'styleschemes\']' => [
+        'numberOfKeysToMatch' => 2,
         'restFiles' => [
             'Breaking-61890-Remove-TBE-Styling-From-FormEngine.rst',
         ],
