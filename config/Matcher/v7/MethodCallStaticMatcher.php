@@ -260,4 +260,11 @@ return [
             'Deprecation-63974-CssCompressorCallbackAndCompressCssString.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Utility\IconUtility::getIcon' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 3,
+        'restFiles' => [
+            'Deprecation-67506-DeprecateIconUtilitygetIcon.rst',
+        ],
+    ],
 ];
