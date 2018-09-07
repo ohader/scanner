@@ -450,4 +450,46 @@ return [
             'Deprecation-69562-DeprecateHelperMethodsForRedundantCSRFProtection.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Utility\BackendUtility::getExcludeFields' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Deprecation-69568-VariousFormEngineRelatedMethods.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Utility\BackendUtility::getExplicitAuthFieldValues' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Deprecation-69568-VariousFormEngineRelatedMethods.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Utility\BackendUtility::getSystemLanguages' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Deprecation-69568-VariousFormEngineRelatedMethods.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Utility\BackendUtility::getRegisteredFlexForms' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-69568-VariousFormEngineRelatedMethods.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Utility\BackendUtility::exec_foreign_table_where_query' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 4,
+        'restFiles' => [
+            'Deprecation-69568-VariousFormEngineRelatedMethods.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Utility\BackendUtility::replaceMarkersInWhereClause' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 4,
+        'restFiles' => [
+            'Deprecation-69568-VariousFormEngineRelatedMethods.rst',
+        ],
+    ],
 ];
