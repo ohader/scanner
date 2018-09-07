@@ -977,4 +977,11 @@ return [
             'Breaking-67565-DeprecatedBackendRelatedMethodsRemoved.rst',
         ],
     ],
+    'TYPO3\CMS\Frontend\Page\PageGenerator->getIncFiles' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-67646-LibraryInclusionInFrontend.rst',
+        ],
+    ],
 ];
