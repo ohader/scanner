@@ -121,6 +121,11 @@ return [
             'Breaking-67811-RteApi.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Template\FrontendDocumentTemplate' => [
+        'restFiles' => [
+            'Breaking-68243-MoveNotUsedFrontendDocumentTemplate.rst',
+        ],
+    ],
 
     // Removed interfaces
     'TYPO3\CMS\Extbase\Persistence\Generic\Qom\QueryObjectModelConstantsInterface' => [
