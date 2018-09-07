@@ -1089,4 +1089,11 @@ return [
             'Breaking-68186-AdjustedAndRemovedMethodsInEIDArea.rst',
         ],
     ],
+    'TYPO3\CMS\IndexedSearch\Indexer->removeLoginpagesWithContentHash' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-68193-DropRemoveLoginpagesWithContentHashFromIndexerphp.rst',
+        ],
+    ],
 ];
