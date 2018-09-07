@@ -106,6 +106,11 @@ return [
             'Breaking-67229-FormEngineRelatedClasses.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Utility\OpcodeCacheUtility' => [
+        'restFiles' => [
+            'Breaking-63838-ChangedOpcodeCacheUtilityBeingAServiceClass.rst',
+        ],
+    ],
 
     // Removed interfaces
     'TYPO3\CMS\Extbase\Persistence\Generic\Qom\QueryObjectModelConstantsInterface' => [
