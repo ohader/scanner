@@ -1308,4 +1308,11 @@ return [
             'Deprecation-71153-DocumentTemplateSpacer.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Messaging\FlashMessage->render' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Deprecation-71249-DeprecateRenderMethodOfFlashMessageClass.rst',
+        ],
+    ],
 ];
