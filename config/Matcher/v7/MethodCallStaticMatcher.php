@@ -323,4 +323,11 @@ return [
             'Deprecation-68122-GeneralUtilityReadLLfile.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Toolbar\Enumeration\InformationStatus::mapStatusToInt' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-69224-FixWrongUsageOfEnumerationsInInformationStatusmapStatusToInt.rst',
+        ],
+    ],
 ];
