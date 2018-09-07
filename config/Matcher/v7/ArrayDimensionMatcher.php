@@ -192,4 +192,9 @@ return [
             'Breaking-69028-DropNegForeignTable.rst',
         ],
     ],
+    '$TBE_MODULES[\'_dispatcher\']' => [
+        'restFiles' => [
+            'Breaking-69148-BackendModuleDispatchingRemoved.rst',
+        ],
+    ],
 ];
