@@ -1287,4 +1287,11 @@ return [
             'Deprecation-69877-UseModuleTemplateAPIForExtfilelist.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Configuration\FlexForm\FlexFormTools->getAvailableLanguages' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Deprecation-70138-FlexFormLanguageHandling.rst',
+        ],
+    ],
 ];
