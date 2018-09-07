@@ -222,4 +222,9 @@ return [
             'Deprecation-69736-SelectOptionIconsInOptionTagsRemoved.rst',
         ],
     ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'SC_OPTIONS\'][\'ext/t3editor/classes/class.tx_t3editor.php\'][\'ajaxSaveCode\']' => [
+        'restFiles' => [
+            'Breaking-69916-HookAjaxSaveCodeOfT3editorChanged.rst',
+        ],
+    ],
 ];
