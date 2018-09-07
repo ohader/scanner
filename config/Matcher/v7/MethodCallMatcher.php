@@ -1138,4 +1138,32 @@ return [
             'Deprecation-67932-DeprecatedOldRsaauthApi.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Controller\BackendController->getPageRenderer' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Deprecation-68074-DeprecateGetPageRenderer.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Template\DocumentTemplate->getPageRenderer' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Deprecation-68074-DeprecateGetPageRenderer.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Template\FrontendDocumentTemplate->getPageRenderer' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Deprecation-68074-DeprecateGetPageRenderer.rst',
+        ],
+    ],
+    'TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController->getPageRenderer' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Deprecation-68074-DeprecateGetPageRenderer.rst',
+        ],
+    ],
 ];
