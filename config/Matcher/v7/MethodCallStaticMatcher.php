@@ -316,4 +316,11 @@ return [
             'Deprecation-68098-GeneralUtilityMethods.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Utility\GeneralUtility::readLLfile' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 4,
+        'restFiles' => [
+            'Deprecation-68122-GeneralUtilityReadLLfile.rst',
+        ],
+    ],
 ];
