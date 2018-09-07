@@ -156,4 +156,9 @@ return [
             'Deprecation-63603-ExtendedFileUtilitydontCheckForUniqueIsDeprecated.rst',
         ],
     ],
+    'TYPO3\CMS\Recordlist\Controller\ElementBrowserController->browser' => [
+        'restFiles' => [
+            'Breaking-69276-ElementBrowserControllerbrowserRemoved.rst',
+        ],
+    ],
 ];
