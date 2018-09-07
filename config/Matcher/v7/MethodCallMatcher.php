@@ -1301,4 +1301,11 @@ return [
             'Deprecation-70494-WrapClickMenuOnIcon.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Template\DocumentTemplate->spacer' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-71153-DocumentTemplateSpacer.rst',
+        ],
+    ],
 ];
