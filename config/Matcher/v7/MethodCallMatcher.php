@@ -942,4 +942,11 @@ return [
             'Breaking-56951-RemoveUnusedMethodsInPagePositionMap.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Resource\Driver\LocalDriver->getPermissions' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-64714-CatchExceptionsForInaccessibleStorages.rst',
+        ],
+    ],
 ];
