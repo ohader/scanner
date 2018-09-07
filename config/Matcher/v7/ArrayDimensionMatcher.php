@@ -202,4 +202,9 @@ return [
             'Breaking-69568-FormEngine.rst',
         ],
     ],
+    '$GLOBALS[\'TCA\'][\'ctrl\'][\'typeicons\']' => [
+        'restFiles' => [
+            'Breaking-69699-TcaCtrlTypeicons.rst',
+        ],
+    ],
 ];
