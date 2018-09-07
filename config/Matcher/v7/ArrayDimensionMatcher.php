@@ -127,4 +127,9 @@ return [
             'Deprecation-65344-ExtTables.rst',
         ],
     ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'SC_OPTIONS\'][\'tslib/class.tslib_content.php\'][\'stdWrap_cacheStore\']' => [
+        'restFiles' => [
+            'Breaking-64200-CustomCObject.cache.TypoScriptEvaluation.rst',
+        ],
+    ],
 ];
