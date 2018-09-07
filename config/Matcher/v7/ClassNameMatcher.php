@@ -126,6 +126,11 @@ return [
             'Breaking-68243-MoveNotUsedFrontendDocumentTemplate.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Database\SqlParser' => [
+        'restFiles' => [
+            'Breaking-68401-SqlParserMovedIntoEXTdbal.rst',
+        ],
+    ],
 
     // Removed interfaces
     'TYPO3\CMS\Extbase\Persistence\Generic\Qom\QueryObjectModelConstantsInterface' => [
