@@ -784,6 +784,7 @@ return [
         'maximumNumberOfArguments' => 1,
         'restFiles' => [
             'Deprecation-64598-DeprecatePagepositionmapjsimgfunc.rst',
+            'Breaking-56951-RemoveUnusedMethodsInPagePositionMap.rst',
         ],
     ],
     'TYPO3\CMS\Backend\Template\DocumentTemplate::getDynTabMenu' => [
@@ -932,6 +933,13 @@ return [
         'maximumNumberOfArguments' => 1,
         'restFiles' => [
             'Deprecation-67297-DbalFieldTypeConversion.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Tree\View\PagePositionMap->insertQuadLines' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Breaking-56951-RemoveUnusedMethodsInPagePositionMap.rst',
         ],
     ],
 ];
