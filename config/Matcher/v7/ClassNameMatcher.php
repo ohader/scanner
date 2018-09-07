@@ -151,6 +151,11 @@ return [
             'Deprecation-68760-ModuleSettings.rst',
         ],
     ],
+    'TYPO3\CMS\Fluid\ViewHelpers\Be\Buttons\IconViewHelper' => [
+        'restFiles' => [
+            'Deprecation-69535-DeprecateTYPO3CMSFluidViewHelpersBeButtonsIconViewHelper.rstDeprecation-69535-DeprecateTYPO3CMSFluidViewHelpersBeButtonsIconViewHelper.rst',
+        ],
+    ],
 
     // Removed interfaces
     'TYPO3\CMS\Extbase\Persistence\Generic\Qom\QueryObjectModelConstantsInterface' => [
