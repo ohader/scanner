@@ -1117,4 +1117,11 @@ return [
             'Deprecation-67288-DeprecateDbalMetaType.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Database\QueryGenerator->formatQ' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-67769-DeprecateQueryGeneratorformatQ.rst',
+        ],
+    ],
 ];
