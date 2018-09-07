@@ -1166,4 +1166,11 @@ return [
             'Deprecation-68074-DeprecateGetPageRenderer.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Page\PageRenderer->addInlineLanguageLabelFile' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 4,
+        'restFiles' => [
+            'Breaking-30863-StreamlineParameterOfInlineLanguageFiles.rst',
+        ],
+    ],
 ];
