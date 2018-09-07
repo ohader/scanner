@@ -246,4 +246,11 @@ return [
             'Breaking-67811-RteApi.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Utility\BackendUtility::countVersionsOfRecordsOnPage' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Deprecation-50349-ReduceSQLQueriesOfPageTreeInWorkspaces.rst',
+        ],
+    ],
 ];
