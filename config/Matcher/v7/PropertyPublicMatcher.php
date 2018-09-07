@@ -151,4 +151,9 @@ return [
             'Breaking-67811-RteApi.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Utility\File\ExtendedFileUtility->dontCheckForUnique' => [
+        'restFiles' => [
+            'Deprecation-63603-ExtendedFileUtilitydontCheckForUniqueIsDeprecated.rst',
+        ],
+    ],
 ];
