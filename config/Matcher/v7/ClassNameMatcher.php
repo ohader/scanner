@@ -131,6 +131,21 @@ return [
             'Breaking-68401-SqlParserMovedIntoEXTdbal.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Form\DataPreprocessor' => [
+        'restFiles' => [
+            'Breaking-69568-FormEngine.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Form\FormEngine' => [
+        'restFiles' => [
+            'Breaking-69568-FormEngine.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Form\FlexFormsHelper' => [
+        'restFiles' => [
+            'Breaking-69568-FormEngine.rst',
+        ],
+    ],
 
     // Removed interfaces
     'TYPO3\CMS\Extbase\Persistence\Generic\Qom\QueryObjectModelConstantsInterface' => [
