@@ -1103,4 +1103,11 @@ return [
             'Breaking-68276-RemoveExtJSQuicktipsIfPossible.rst',
         ],
     ],
+    'TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController->getStorageSiterootPids' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Deprecation-65790-PagesStoragePidDeprecated.rst',
+        ],
+    ],
 ];
