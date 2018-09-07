@@ -232,4 +232,11 @@ return [
             'Deprecation-66906-FunctionalityPngToGifConversion.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Utility\BackendUtility::getFileIcon' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-67654-RemoveGLOBALSFILEICONSFunctionality.rst',
+        ],
+    ],
 ];
