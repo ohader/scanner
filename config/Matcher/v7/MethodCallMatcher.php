@@ -949,4 +949,11 @@ return [
             'Breaking-64714-CatchExceptionsForInaccessibleStorages.rst',
         ],
     ],
+    'TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController->checkJumpUrlReferer' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-66602-RemoveRefererCheckWhileHandlingJumpUrl.rst',
+        ],
+    ],
 ];
