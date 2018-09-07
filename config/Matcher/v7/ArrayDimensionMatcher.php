@@ -207,4 +207,9 @@ return [
             'Breaking-69699-TcaCtrlTypeicons.rst',
         ],
     ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'BE\'][\'diff_path\']' => [
+        'restFiles' => [
+            'Breaking-69904-RemoveSettingDiff_pathFromDefaultConfiguration.rst',
+        ],
+    ],
 ];
