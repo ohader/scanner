@@ -167,4 +167,29 @@ return [
             'Breaking-68178-DropFormEnctype.rst',
         ],
     ],
+    '$something[\'neg_foreign_table\']' => [
+        'restFiles' => [
+            'Breaking-69028-DropNegForeignTable.rst',
+        ],
+    ],
+    '$something[\'neg_foreign_table_where\']' => [
+        'restFiles' => [
+            'Breaking-69028-DropNegForeignTable.rst',
+        ],
+    ],
+    '$something[\'neg_foreign_table_prefix\']' => [
+        'restFiles' => [
+            'Breaking-69028-DropNegForeignTable.rst',
+        ],
+    ],
+    '$something[\'neg_foreign_table_loadIcons\']' => [
+        'restFiles' => [
+            'Breaking-69028-DropNegForeignTable.rst',
+        ],
+    ],
+    '$something[\'neg_foreign_table_imposeValueField\']' => [
+        'restFiles' => [
+            'Breaking-69028-DropNegForeignTable.rst',
+        ],
+    ],
 ];
