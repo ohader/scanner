@@ -27,4 +27,10 @@ return [
             'Breaking-68001-RemovedExtJSCoreAndExtJSAdapters.rst',
         ],
     ],
+    'TYPO3\CMS\Frontend\Page\PageRepository->getExtURL' => [
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-66904-DisablegetExtURL.rst',
+        ],
+    ],
 ];
