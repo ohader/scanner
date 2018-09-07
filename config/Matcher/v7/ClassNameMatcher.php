@@ -176,6 +176,21 @@ return [
             'Breaking-66369-RemovedElementBrowserRelatedClasses.rst',
         ],
     ],
+    'TYPO3\CMS\Form\View\Wizard\AbstractWizardView' => [
+        'restFiles' => [
+            'Breaking-70574-FormWizardSaveHandlingChanged.rst',
+        ],
+    ],
+    'TYPO3\CMS\Form\View\Wizard\LoadWizardView' => [
+        'restFiles' => [
+            'Breaking-70574-FormWizardSaveHandlingChanged.rst',
+        ],
+    ],
+    'TYPO3\CMS\Form\View\Wizard\SaveWizardView' => [
+        'restFiles' => [
+            'Breaking-70574-FormWizardSaveHandlingChanged.rst',
+        ],
+    ],
 
     // Removed interfaces
     'TYPO3\CMS\Extbase\Persistence\Generic\Qom\QueryObjectModelConstantsInterface' => [
