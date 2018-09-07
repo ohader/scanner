@@ -267,4 +267,53 @@ return [
             'Deprecation-67506-DeprecateIconUtilitygetIcon.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Utility\GeneralUtility::modifyHTMLColor' => [
+        'numberOfMandatoryArguments' => 3,
+        'maximumNumberOfArguments' => 3,
+        'restFiles' => [
+            'Deprecation-68098-GeneralUtilityMethods.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\GeneralUtility::modifyHTMLColorAll' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Deprecation-68098-GeneralUtilityMethods.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\GeneralUtility::isBrokenEmailEnvironment' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Deprecation-68098-GeneralUtilityMethods.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\GeneralUtility::normalizeMailAddress' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-68098-GeneralUtilityMethods.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\GeneralUtility::formatForTextarea' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-68098-GeneralUtilityMethods.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\GeneralUtility::getThisUrl' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Deprecation-68098-GeneralUtilityMethods.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\GeneralUtility::cleanOutputBuffers' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Deprecation-68098-GeneralUtilityMethods.rst',
+        ],
+    ],
 ];
