@@ -1201,4 +1201,11 @@ return [
             'Breaking-52156-ReplaceJumpUrlWithHooks.rst',
         ],
     ],
+    'TYPO3\CMS\Recordlist\Browser\ElementBrowser->getMsgBox' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Breaking-68571-RemoveElementBrowser-getMsgBox.rst',
+        ],
+    ],
 ];
