@@ -132,4 +132,14 @@ return [
             'Breaking-64200-CustomCObject.cache.TypoScriptEvaluation.rst',
         ],
     ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'SC_OPTIONS\'][\'tce\'][\'formevals\']' => [
+        'restFiles' => [
+            'Breaking-67749-ForceAutoloadingForVariousHooks.rst',
+        ],
+    ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'SC_OPTIONS\'][\'setup\'][\'accessLevelCheck\']' => [
+        'restFiles' => [
+            'Breaking-67749-ForceAutoloadingForVariousHooks.rst',
+        ],
+    ],
 ];
