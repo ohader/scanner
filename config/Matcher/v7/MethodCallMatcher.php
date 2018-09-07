@@ -1033,4 +1033,25 @@ return [
             'Breaking-68001-RemovedExtJSCoreAndExtJSAdapters.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\View\PageLayoutView->linkRTEbutton' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-68020-DroppedDisableBigButtons.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\View\PageLayoutView->isRTEforField' => [
+        'numberOfMandatoryArguments' => 3,
+        'maximumNumberOfArguments' => 3,
+        'restFiles' => [
+            'Breaking-68020-DroppedDisableBigButtons.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\View\PageLayoutView->getSpecConfForField' => [
+        'numberOfMandatoryArguments' => 3,
+        'maximumNumberOfArguments' => 3,
+        'restFiles' => [
+            'Breaking-68020-DroppedDisableBigButtons.rst',
+        ],
+    ],
 ];
