@@ -138,4 +138,9 @@ return [
             'Breaking-66754-RemoveRenderingContextAwareInterface.rst',
         ],
     ],
+    'TYPO3\CMS\Frontend\ContentObject\FluidTemplateDataProcessorInterface' => [
+        'restFiles' => [
+            'Breaking-67890-RedesignFluidTemplateDataProcessorInterfaceToDataProcessorInterface.rst',
+        ],
+    ],
 ];
