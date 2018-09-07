@@ -1265,4 +1265,18 @@ return [
             'Deprecation-69028-RelationHandlerConvertPosNeg.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Template\DocumentTemplate->getDynamicTabMenu' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 6,
+        'restFiles' => [
+            'Deprecation-60712-GetDynamicTabMenu.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Template\DocumentTemplate->getDynTabMenuId' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-60712-GetDynamicTabMenu.rst',
+        ],
+    ],
 ];
