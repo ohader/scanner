@@ -1131,4 +1131,11 @@ return [
             'Deprecation-67790-DeprecateQueryGeneratorJSbottom.rst',
         ],
     ],
+    'TYPO3\CMS\Rsaauth\Backend\AjaxLoginHandler->getRsaPublicKey' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Deprecation-67932-DeprecatedOldRsaauthApi.rst',
+        ],
+    ],
 ];
