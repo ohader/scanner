@@ -1110,4 +1110,11 @@ return [
             'Deprecation-65790-PagesStoragePidDeprecated.rst',
         ],
     ],
+    'TYPO3\CMS\Dbal\Database\DatabaseConnection->MetaType' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 3,
+        'restFiles' => [
+            'Deprecation-67288-DeprecateDbalMetaType.rst',
+        ],
+    ],
 ];
