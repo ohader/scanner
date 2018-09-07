@@ -232,4 +232,9 @@ return [
             'Breaking-71110-TYPO3-specificUploadLimitRemoved.rst',
         ],
     ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'BE\'][\'flexFormXMLincludeDiffBase\']' => [
+        'restFiles' => [
+            'Deprecation-70138-FlexFormLanguageHandling.rst',
+        ],
+    ],
 ];

@@ -176,4 +176,9 @@ return [
             'Deprecation-69561-ReplaceSpriteIconsWithIconFactoryInContextMenu.rst',
         ],
     ],
+    'TYPO3\CMS\Core\DataHandling\DataHandler->clear_flexFormData_vDEFbase' => [
+        'restFiles' => [
+            'Deprecation-70138-FlexFormLanguageHandling.rst',
+        ],
+    ],
 ];
