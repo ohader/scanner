@@ -166,4 +166,9 @@ return [
             'Breaking-69315-ElementBrowsermain_Protected.rst',
         ],
     ],
+    'TYPO3\CMS\Core\TypoScript\TemplateService->tempPath' => [
+        'restFiles' => [
+            'Deprecation-69078-TemplateService-tempPath.rst',
+        ],
+    ],
 ];
