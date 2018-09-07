@@ -330,4 +330,25 @@ return [
             'Breaking-69224-FixWrongUsageOfEnumerationsInInformationStatusmapStatusToInt.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Utility\GeneralUtility::addSlashesOnArray' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-68128-GeneralUtilitySlash-relatedMethods.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\GeneralUtility::stripSlashesOnArray' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-68128-GeneralUtilitySlash-relatedMethods.rst',
+        ],
+    ],
+    'TYPO3\CMS\Core\Utility\GeneralUtility::slashArray' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Deprecation-68128-GeneralUtilitySlash-relatedMethods.rst',
+        ],
+    ],
 ];
