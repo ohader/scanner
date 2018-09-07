@@ -991,4 +991,18 @@ return [
             'Breaking-67753-DropSecondaryOptions.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Rte\AbstractRte->isAvailable' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-67811-RteApi.rst',
+        ],
+    ],
+    'TYPO3\CMS\Backend\Rte\AbstractRte->transformContent' => [
+        'numberOfMandatoryArguments' => 9,
+        'maximumNumberOfArguments' => 9,
+        'restFiles' => [
+            'Breaking-67811-RteApi.rst',
+        ],
+    ],
 ];

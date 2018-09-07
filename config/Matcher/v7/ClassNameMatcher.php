@@ -111,6 +111,16 @@ return [
             'Breaking-63838-ChangedOpcodeCacheUtilityBeingAServiceClass.rst',
         ],
     ],
+    'TYPO3\CMS\Backend\Rte\AbstractRte' => [
+        'restFiles' => [
+            'Breaking-67811-RteApi.rst',
+        ],
+    ],
+    'TYPO3\CMS\Rtehtmlarea\RteHtmlAreaBase' => [
+        'restFiles' => [
+            'Breaking-67811-RteApi.rst',
+        ],
+    ],
 
     // Removed interfaces
     'TYPO3\CMS\Extbase\Persistence\Generic\Qom\QueryObjectModelConstantsInterface' => [

@@ -152,4 +152,14 @@ return [
             'Breaking-62833-Dividers2Tabs.rst',
         ],
     ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'BE\'][\'RTE_reg\']' => [
+        'restFiles' => [
+            'Breaking-67811-RteApi.rst',
+        ],
+    ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'EXTCONF\'][\'anExtensionKey\'][\'plugins\'][\'aPluginName\'][\'addIconsToSkin\']' => [
+        'restFiles' => [
+            'Breaking-67811-RteApi.rst',
+        ],
+    ],
 ];

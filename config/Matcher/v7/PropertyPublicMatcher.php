@@ -146,4 +146,9 @@ return [
             'Breaking-67753-DropSecondaryOptions.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Authentication\BackendUserAuthentication->RTE_errors' => [
+        'restFiles' => [
+            'Breaking-67811-RteApi.rst',
+        ],
+    ],
 ];
