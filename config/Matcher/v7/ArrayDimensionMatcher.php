@@ -197,4 +197,9 @@ return [
             'Breaking-69148-BackendModuleDispatchingRemoved.rst',
         ],
     ],
+    '$GLOBALS[\'TYPO3_CONF_VARS\'][\'SC_OPTIONS\'][\'t3lib/class.t3lib_tceforms.php\'][\'getMainFieldsClass\']' => [
+        'restFiles' => [
+            'Breaking-69568-FormEngine.rst',
+        ],
+    ],
 ];
