@@ -1173,4 +1173,32 @@ return [
             'Breaking-30863-StreamlineParameterOfInlineLanguageFiles.rst',
         ],
     ],
+    'TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer->locDataJU' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Breaking-52156-ReplaceJumpUrlWithHooks.rst',
+        ],
+    ],
+    'TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController->locDataCheck' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Breaking-52156-ReplaceJumpUrlWithHooks.rst',
+        ],
+    ],
+    'TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController->setExternalJumpUrl' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-52156-ReplaceJumpUrlWithHooks.rst',
+        ],
+    ],
+    'TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController->jumpUrl' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-52156-ReplaceJumpUrlWithHooks.rst',
+        ],
+    ],
 ];
