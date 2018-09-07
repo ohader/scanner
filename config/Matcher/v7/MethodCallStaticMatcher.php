@@ -492,4 +492,11 @@ return [
             'Deprecation-69568-VariousFormEngineRelatedMethods.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addModulePath' => [
+        'numberOfMandatoryArguments' => 2,
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Deprecation-51482-ScriptBasedModules.rst',
+        ],
+    ],
 ];
