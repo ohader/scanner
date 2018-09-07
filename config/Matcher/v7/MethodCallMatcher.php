@@ -1096,4 +1096,11 @@ return [
             'Breaking-68193-DropRemoveLoginpagesWithContentHashFromIndexerphp.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Page\PageRenderer->enableExtJSQuickTips' => [
+        'numberOfMandatoryArguments' => 0,
+        'maximumNumberOfArguments' => 0,
+        'restFiles' => [
+            'Breaking-68276-RemoveExtJSQuicktipsIfPossible.rst',
+        ],
+    ],
 ];
