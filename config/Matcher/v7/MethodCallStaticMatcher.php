@@ -253,4 +253,11 @@ return [
             'Deprecation-50349-ReduceSQLQueriesOfPageTreeInWorkspaces.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Resource\ResourceCompressor::compressCssPregCallback' => [
+        'numberOfMandatoryArguments' => 1,
+        'maximumNumberOfArguments' => 1,
+        'restFiles' => [
+            'Deprecation-63974-CssCompressorCallbackAndCompressCssString.rst',
+        ],
+    ],
 ];
