@@ -31,4 +31,14 @@ return [
             'Breaking-68814-RemoveOfBaseConstantTYPO3_URL_ORG.rst',
         ],
     ],
+    'TYPO3_cliKey' => [
+        'restFiles' => [
+            'Deprecation-68804-CLI-relatedConstantsAndMethods.rst',
+        ],
+    ],
+    'TYPO3_cliInclude' => [
+        'restFiles' => [
+            'Deprecation-68804-CLI-relatedConstantsAndMethods.rst',
+        ],
+    ],
 ];
