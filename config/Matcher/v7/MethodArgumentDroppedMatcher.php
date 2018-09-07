@@ -21,4 +21,10 @@ return [
             'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
         ],
     ],
+    'TYPO3\CMS\Core\Page\PageRenderer->loadExtJS' => [
+        'maximumNumberOfArguments' => 2,
+        'restFiles' => [
+            'Breaking-68001-RemovedExtJSCoreAndExtJSAdapters.rst',
+        ],
+    ],
 ];
