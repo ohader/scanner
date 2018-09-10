@@ -67,7 +67,7 @@ class ArrayDimensionMatcher extends AbstractCoreMatcher
                 $matchFound = false;
                 $currentNode = $node;
                 foreach ($candidate['matchKeys'] as $key) {
-                    if ($key !== $currentNode->dim->value) {
+                    if (isset($currentNode->dim->value) && $key !== $currentNode->dim->value) {
                         $matchFound = false;
                         break;
                     }
