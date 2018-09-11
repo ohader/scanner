@@ -57,23 +57,9 @@ return [
             'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
         ],
     ],
-    'TYPO3\CMS\Core\Category\CategoryRegistry->get' => [
-        'numberOfMandatoryArguments' => 0,
-        'maximumNumberOfArguments' => 0,
-        'restFiles' => [
-            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
-        ],
-    ],
     'TYPO3\CMS\Core\Category\CategoryRegistry->applyTca' => [
         'numberOfMandatoryArguments' => 0,
         'maximumNumberOfArguments' => 0,
-        'restFiles' => [
-            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
-        ],
-    ],
-    'TYPO3\CMS\Core\Resource\FileRepository->findByUid' => [
-        'numberOfMandatoryArguments' => 1,
-        'maximumNumberOfArguments' => 1,
         'restFiles' => [
             'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
         ],
@@ -100,13 +86,6 @@ return [
         ],
     ],
     'TYPO3\CMS\Core\Resource\FileRepository->findBySha1Hash' => [
-        'numberOfMandatoryArguments' => 1,
-        'maximumNumberOfArguments' => 1,
-        'restFiles' => [
-            'Breaking-62416-DeprecatedCodeRemovalInCoreSysext.rst',
-        ],
-    ],
-    'TYPO3\CMS\Core\Resource\FileRepository->update' => [
         'numberOfMandatoryArguments' => 1,
         'maximumNumberOfArguments' => 1,
         'restFiles' => [
@@ -794,13 +773,6 @@ return [
             'Deprecation-65111-getDynTabMenu.rst',
         ],
     ],
-    'TYPO3\CMS\Core\Database\ReferenceIndex->error' => [
-        'numberOfMandatoryArguments' => 1,
-        'maximumNumberOfArguments' => 1,
-        'restFiles' => [
-            'Deprecation-65465-ReferenceIndexErrorLog.rst',
-        ],
-    ],
     'TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController->checkFileInclude' => [
         'numberOfMandatoryArguments' => 1,
         'maximumNumberOfArguments' => 1,
@@ -1069,13 +1041,6 @@ return [
             'Breaking-68186-AdjustedAndRemovedMethodsInEIDArea.rst',
         ],
     ],
-    'TYPO3\CMS\Frontend\Controller\ExtDirectEidController->render' => [
-        'numberOfMandatoryArguments' => 0,
-        'maximumNumberOfArguments' => 0,
-        'restFiles' => [
-            'Breaking-68186-AdjustedAndRemovedMethodsInEIDArea.rst',
-        ],
-    ],
     'TYPO3\CMS\Frontend\Utility\EidUtility->isEidRequest' => [
         'numberOfMandatoryArguments' => 0,
         'maximumNumberOfArguments' => 0,
@@ -1245,13 +1210,6 @@ return [
             'Breaking-69315-ElementBrowsermain_Protected.rst',
         ],
     ],
-    'TYPO3\CMS\Fluid\ViewHelpers\Form\AbstractFormFieldViewHelper->getValue' => [
-        'numberOfMandatoryArguments' => 0,
-        'maximumNumberOfArguments' => 1,
-        'restFiles' => [
-            'Deprecation-66588-POSTDataInSelectviewhelperShouldHaveHigherPriorityThanValueValue.rst',
-        ],
-    ],
     'TYPO3\CMS\Core\Authentication\BackendUserAuthentication->checkCLIuser' => [
         'numberOfMandatoryArguments' => 0,
         'maximumNumberOfArguments' => 0,
@@ -1306,13 +1264,6 @@ return [
         'maximumNumberOfArguments' => 1,
         'restFiles' => [
             'Deprecation-71153-DocumentTemplateSpacer.rst',
-        ],
-    ],
-    'TYPO3\CMS\Core\Messaging\FlashMessage->render' => [
-        'numberOfMandatoryArguments' => 0,
-        'maximumNumberOfArguments' => 0,
-        'restFiles' => [
-            'Deprecation-71249-DeprecateRenderMethodOfFlashMessageClass.rst',
         ],
     ],
     'TYPO3\CMS\IndexedSearch\Controller\SearchFormController->pi_list_browseresults' => [
