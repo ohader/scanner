@@ -90,14 +90,6 @@ class Scanner
             return $this->buildParseExceptionFileMatches($file, $error);
         }
 
-        try {
-            $statements = $this->parser->parse(
-                file_get_contents($file)
-            );
-        } catch (Error $error) {
-            return $this->buildParseExceptionFileMatches($file, $error);
-        }
-
         $matchers = $this->traverserFactory->createMatchers($collection);
         $traverser = $this->traverserFactory->createTraverser(...$matchers);
         $traverser->traverse($statements);
