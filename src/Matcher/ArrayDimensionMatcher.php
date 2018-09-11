@@ -61,6 +61,7 @@ class ArrayDimensionMatcher extends AbstractCoreMatcher
             && !$this->isLineIgnored($node)
             && $node instanceof ArrayDimFetch
             && isset($node->dim->value)
+            && (\is_int($node->dim->value) || \is_string($node->dim->value))
             && array_key_exists($node->dim->value, $this->flatMatcherDefinitions)
         ) {
             foreach ($this->flatMatcherDefinitions[$node->dim->value]['candidates'] as $candidate) {
