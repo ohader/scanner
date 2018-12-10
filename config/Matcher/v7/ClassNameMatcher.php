@@ -1,7 +1,7 @@
 <?php
 return [
     // Removed classes
-    'TYPO3\CMS\Core\Messaging\FlashMessage' => [
+    'TYPO3\CMS\Extbase\Mvc\Controller\FlashMessageContainer' => [
         'restFiles' => [
             'Breaking-57382-FlashMessageApi.rst',
         ],
