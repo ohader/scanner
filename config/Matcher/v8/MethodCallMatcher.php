@@ -1618,7 +1618,7 @@ return [
         'numberOfMandatoryArguments' => 3,
         'maximumNumberOfArguments' => 3,
         'restFiles' => [
-            '8.6/Deprecation-51291-PageRepositoryShouldFieldBeOverlaid.rst',
+            '8.6/Deprecation-79658-PageRepositoryShouldFieldBeOverlaid.rst',
         ],
     ],
     'TYPO3\CMS\Core\Messaging\FlashMessage->getClass' => [
