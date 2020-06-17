@@ -45,18 +45,6 @@ class ArrayDimensionMatcherTest extends TestCase
                     'Deprecation-70316-FrontendBasketWithRecs.rst',
                 ],
             ],
-            '$GLOBALS[\'TBE_MODULES_EXT\'][\'xMOD_alt_clickmenu\'][\'extendCMclasses\'][\'path\']' => [
-                'numberOfKeysToMatch' => 3,
-                'restFiles' => [
-                    'Breaking-61781-IncludeOnceArrayOfClickMenuControllerRemoved.rst',
-                ],
-            ],
-            '$GLOBALS[\'TBE_STYLES\'][\'styleschemes\']' => [
-                'numberOfKeysToMatch' => 2,
-                'restFiles' => [
-                    'Breaking-61890-Remove-TBE-Styling-From-FormEngine.rst',
-                ],
-            ],
         ];
         $subject = new ArrayDimensionMatcher($configuration);
         $traverser->addVisitor($subject);
@@ -64,14 +52,12 @@ class ArrayDimensionMatcherTest extends TestCase
         $expectedHitLineNumbers = [
             26,
             27,
-            28,
-            29,
         ];
         $actualHitLineNumbers = [];
         foreach ($subject->getMatches() as $hit) {
             $actualHitLineNumbers[] = $hit['line'];
         }
-        $this->assertEquals($expectedHitLineNumbers, $actualHitLineNumbers);
+        self::assertEquals($expectedHitLineNumbers, $actualHitLineNumbers);
     }
 
     /**
@@ -102,10 +88,6 @@ class ArrayDimensionMatcherTest extends TestCase
                         'restFiles' => [
                             'Foo-1.rst',
                             'Foo-2.rst',
-                        ],
-                    ],
-                    1 => [
-                        'restFiles' => [
                             'Bar-1.rst',
                             'Bar-2.rst',
                         ],
@@ -115,11 +97,13 @@ class ArrayDimensionMatcherTest extends TestCase
             'double linked .rst file is returned only once' => [
                 [
                     '$foo[\'bar\'][\'findMe\']' => [
+                        'unusedArgumentNumbers' => [ 1 ],
                         'restFiles' => [
                             'aRest.rst',
                         ],
                     ],
                     '$foo[\'findMe\']' => [
+                        'unusedArgumentNumbers' => [ 1 ],
                         'restFiles' => [
                             'aRest.rst',
                         ],
@@ -135,7 +119,7 @@ class ArrayDimensionMatcherTest extends TestCase
                     ],
                 ],
             ],
-       ];
+        ];
     }
 
     /**
@@ -157,7 +141,6 @@ class ArrayDimensionMatcherTest extends TestCase
         $traverser->traverse($statements);
 
         $result = $subject->getMatches();
-
-        $this->assertEquals($expected[0]['restFiles'], $result[0]['restFiles']);
+        self::assertEquals($expected[0]['restFiles'], $result[0]['restFiles']);
     }
 }

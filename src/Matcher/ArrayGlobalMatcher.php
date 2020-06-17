@@ -23,6 +23,7 @@ use PhpParser\Node\Scalar\String_;
 /**
  * Match access to a one dimensional $GLOBAL array
  * Example "$GLOBALS['TYPO3_DB']"
+ * @internal This class is only meant to be used within EXT:install and is not part of the TYPO3 Core API.
  */
 class ArrayGlobalMatcher extends AbstractCoreMatcher
 {
@@ -50,11 +51,7 @@ class ArrayGlobalMatcher extends AbstractCoreMatcher
             && $node->var instanceof Variable
             && $node->var->name === 'GLOBALS'
             && $node->dim instanceof String_
-            && in_array(
-                '$GLOBALS[\'' . $node->dim->value . '\']',
-                array_keys($this->matcherDefinitions),
-                true
-            )
+            && array_key_exists('$GLOBALS[\'' . $node->dim->value . '\']', $this->matcherDefinitions)
         ) {
             $this->matches[] = [
                 'restFiles' => $this->matcherDefinitions['$GLOBALS[\'' . $node->dim->value . '\']']['restFiles'],
