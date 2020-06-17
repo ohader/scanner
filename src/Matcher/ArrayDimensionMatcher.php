@@ -54,6 +54,7 @@ class ArrayDimensionMatcher extends AbstractCoreMatcher
             $match = [
                 'restFiles' => [],
                 'line' => $node->getAttribute('startLine'),
+                'subject' => $node->dim->value,
                 'message' => 'Access to array key "' . $node->dim->value . '"',
                 'indicator' => 'weak',
             ];

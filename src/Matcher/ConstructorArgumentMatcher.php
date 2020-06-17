@@ -109,6 +109,7 @@ class ConstructorArgumentMatcher extends AbstractCoreMatcher
         $this->matches[] = [
             'restFiles' => $candidate['restFiles'],
             'line' => $node->getAttribute('startLine'),
+            'subject' => $node->toString(),
             'message' => sprintf(
                 '%s::__construct requires at least %d arguments (%d given).',
                 $className,
@@ -139,6 +140,7 @@ class ConstructorArgumentMatcher extends AbstractCoreMatcher
         $this->matches[] = [
             'restFiles' => $candidate['restFiles'],
             'line' => $node->getAttribute('startLine'),
+            'subject' => $node->toString(),
             'message' => sprintf(
                 '%s::__construct supports only %d arguments (%d given).',
                 $className,
@@ -173,6 +175,7 @@ class ConstructorArgumentMatcher extends AbstractCoreMatcher
         $this->matches[] = [
             'restFiles' => $candidate['restFiles'],
             'line' => $node->getAttribute('startLine'),
+            'subject' => $node->toString(),
             'message' => sprintf(
                 '%s::__construct being called (%d arguments given).',
                 $className,
@@ -221,6 +224,7 @@ class ConstructorArgumentMatcher extends AbstractCoreMatcher
         $this->matches[] = [
             'restFiles' => $candidate['restFiles'],
             'line' => $node->getAttribute('startLine'),
+            'subject' => $node->toString(),
             'message' => sprintf(
                 '%s::__construct was called with argument positions %s not being null.',
                 $className,
