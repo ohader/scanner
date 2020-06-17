@@ -28,6 +28,7 @@ use TYPO3\CMS\Scanner\CodeScannerInterface;
  */
 abstract class AbstractCoreMatcher extends NodeVisitorAbstract implements CodeScannerInterface
 {
+    const NODE_RESOLVED_AS = 'nodeResolvedAs';
     const INDICATOR_IMPOSSIBLE = 'impossible';
     const INDICATOR_STRONG = 'strong';
     const INDICATOR_WEAK = 'weak';
@@ -92,30 +93,35 @@ abstract class AbstractCoreMatcher extends NodeVisitorAbstract implements CodeSc
     protected function validateMatcherDefinitions(array $requiredArrayKeys = [])
     {
         foreach ($this->matcherDefinitions as $key => $matcherDefinition) {
-            // Each config must point to at least one .rst file
-            if (empty($matcherDefinition['restFiles'])) {
+            $this->validateMatcherDefinitionKeys($key, $matcherDefinition, $requiredArrayKeys);
+        }
+    }
+
+    protected function validateMatcherDefinitionKeys(string $key, array $matcherDefinition, array $requiredArrayKeys = [])
+    {
+        // Each config must point to at least one .rst file
+        if (empty($matcherDefinition['restFiles'])) {
+            throw new \InvalidArgumentException(
+                'Each configuration must have at least one referenced "restFiles" entry. Offending key: ' . $key,
+                1500496068
+            );
+        }
+        foreach ($matcherDefinition['restFiles'] as $file) {
+            if (empty($file)) {
                 throw new \InvalidArgumentException(
-                    'Each configuration must have at least one referenced "restFiles" entry. Offending key: ' . $key,
-                    1500496068
+                    'Empty restFiles definition',
+                    1500735983
                 );
             }
-            foreach ($matcherDefinition['restFiles'] as $file) {
-                if (empty($file)) {
-                    throw new \InvalidArgumentException(
-                        'Empty restFiles definition',
-                        1500735983
-                    );
-                }
-            }
-            // Config broken if not all required array keys are specified in config
-            $sharedArrays = array_intersect(array_keys($matcherDefinition), $requiredArrayKeys);
-            if ($sharedArrays !== $requiredArrayKeys) {
-                $missingKeys = array_diff($requiredArrayKeys, $matcherDefinition);
-                throw new \InvalidArgumentException(
-                    'Required matcher definitions missing: ' . implode(', ', $missingKeys) . ' offending key: ' . $key,
-                    1500492001
-                );
-            }
+        }
+        // Config broken if not all required array keys are specified in config
+        $sharedArrays = array_intersect(array_keys($matcherDefinition), $requiredArrayKeys);
+        if (count($sharedArrays) !== count($requiredArrayKeys)) {
+            $missingKeys = array_diff($requiredArrayKeys, array_keys($matcherDefinition));
+            throw new \InvalidArgumentException(
+                'Required matcher definitions missing: ' . implode(', ', $missingKeys) . ' offending key: ' . $key,
+                1500492001
+            );
         }
     }
 
