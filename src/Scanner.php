@@ -126,7 +126,7 @@ class Scanner
                 $match = new Match(
                     $result['matcher'],
                     $result['indicator'],
-                    $result['subject'],
+                    isset($result['subject']) ? $result['subject'] : '',
                     $result['message'],
                     $result['line'],
                     !empty($type) ? $type : Match::TYPE_IMPORTANT
