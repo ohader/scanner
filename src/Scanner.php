@@ -7,7 +7,7 @@ use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
 use TYPO3\CMS\Scanner\Domain\Model\DirectoryMatches;
 use TYPO3\CMS\Scanner\Domain\Model\FileMatches;
-use TYPO3\CMS\Scanner\Domain\Model\Match;
+use TYPO3\CMS\Scanner\Domain\Model\TheMatch;
 use TYPO3\CMS\Scanner\Domain\Model\MatcherBundleCollection;
 use TYPO3\CMS\Scanner\Matcher\AbstractCoreMatcher;
 use TYPO3\CMS\Scanner\Visitor\TraverserFactory;
@@ -22,10 +22,10 @@ class Scanner
      * @var array
      */
     private $typeRanking = [
-        Match::TYPE_BREAKING => 100,
-        Match::TYPE_DEPRECATION => 80,
-        Match::TYPE_IMPORTANT => 50,
-        Match::TYPE_FEATURE => 20
+        TheMatch::TYPE_BREAKING => 100,
+        TheMatch::TYPE_DEPRECATION => 80,
+        TheMatch::TYPE_IMPORTANT => 50,
+        TheMatch::TYPE_FEATURE => 20
     ];
 
     public function __construct(
@@ -99,7 +99,7 @@ class Scanner
 
     /**
      * @param CodeScannerInterface[] ...$matchers
-     * @return Match[]
+     * @return TheMatch[]
      */
     private function buildMatches(CodeScannerInterface ...$matchers): array
     {
@@ -123,13 +123,13 @@ class Scanner
                 if (!empty($result['restFiles'])) {
                     $type = $this->inferTypeFromRestFiles($result['restFiles']);
                 }
-                $match = new Match(
+                $match = new TheMatch(
                     $result['matcher'],
                     $result['indicator'],
                     isset($result['subject']) ? $result['subject'] : '',
                     $result['message'],
                     $result['line'],
-                    !empty($type) ? $type : Match::TYPE_IMPORTANT
+                    !empty($type) ? $type : TheMatch::TYPE_IMPORTANT
                 );
                 if (!empty($result['restFiles'])) {
                     $match->setRestFiles($result['restFiles']);
@@ -145,13 +145,13 @@ class Scanner
         Error $error
     ): FileMatches
     {
-        $match = new Match(
+        $match = new TheMatch(
             get_class($error),
             AbstractCoreMatcher::INDICATOR_IMPOSSIBLE,
             $file,
             $error->getMessage(),
             $error->getStartLine(),
-            Match::TYPE_BREAKING
+            TheMatch::TYPE_BREAKING
         );
         return new FileMatches($file, $match);
     }
@@ -162,7 +162,7 @@ class Scanner
         foreach ($restFiles as $restFile) {
             $fileType = $this->extractFileType($restFile);
             $type = $this->getHigherType($type, $fileType);
-            if ($type === Match::TYPE_BREAKING) {
+            if ($type === TheMatch::TYPE_BREAKING) {
                 // breaking is the highest type, return if this type is found.
                 break;
             }

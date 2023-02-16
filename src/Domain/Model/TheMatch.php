@@ -1,7 +1,7 @@
 <?php
 namespace TYPO3\CMS\Scanner\Domain\Model;
 
-class Match
+class TheMatch
 {
     const TYPE_BREAKING = 'BREAKING';
     const TYPE_DEPRECATION = 'DEPRECATION';
